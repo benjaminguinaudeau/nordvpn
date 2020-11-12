@@ -1313,3 +1313,78 @@ Already has now 89 servers
 Already has now 99 servers
 
 
+[ 2020-11-12 02:26:08 ] 
+ ip : 37.120.141.35 
+ country : NL 
+ tz : Europe/Amsterdam 
+ region : North Holland 
+ city : Amsterdam 
+ zip :  
+ lat : 0 
+ lon : 0 
+ servers_link : https://downloads.nordcdn.com/configs/files/ovpn_legacy/servers/nl778.nordvpn.com.tcp443.ovpn 
+ server : nl778.nordvpn.com.tcp443.ovpn 
+ down : FALSE 
+ latency : 102 
+ stamp : 2020-11-12 02:26:08 
+[ 2020-11-12 02:26:10 ] 
+ ip : 107.181.177.21 
+ country : CA 
+ tz : America/Vancouver 
+ region : British Columbia 
+ city : Vancouver 
+ zip :  
+ lat : 0 
+ lon : 0 
+ servers_link : https://downloads.nordcdn.com/configs/files/ovpn_legacy/servers/ca1326.nordvpn.com.tcp443.ovpn 
+ server : ca1326.nordvpn.com.tcp443.ovpn 
+ down : FALSE 
+ latency : 66.1 
+ stamp : 2020-11-12 02:26:10 
+[ 2020-11-12 02:26:12 ] 
+ ip : 172.98.76.236 
+ country : US 
+ tz : America/Chicago 
+ region :  
+ city :  
+ zip :  
+ lat : 0 
+ lon : 0 
+ servers_link : https://downloads.nordcdn.com/configs/files/ovpn_legacy/servers/us6173.nordvpn.com.tcp443.ovpn 
+ server : us6173.nordvpn.com.tcp443.ovpn 
+ down : FALSE 
+ latency : 59.7 
+ stamp : 2020-11-12 02:26:12 
+[ 2020-11-12 02:26:14 ] 
+ ip : 184.75.208.107 
+ country : CA 
+ tz : America/Toronto 
+ region : Ontario 
+ city : Toronto 
+ zip :  
+ lat : 0 
+ lon : 0 
+ servers_link : https://downloads.nordcdn.com/configs/files/ovpn_legacy/servers/ca1195.nordvpn.com.tcp443.ovpn 
+ server : ca1195.nordvpn.com.tcp443.ovpn 
+ down : FALSE 
+ latency : 17.2 
+ stamp : 2020-11-12 02:26:14 
+[ 2020-11-12 02:26:17 ] 
+ ip : 45.155.40.19 
+ country : US 
+ tz : America/Los_Angeles 
+ region : California 
+ city : Los Angeles 
+ zip :  
+ lat : 0 
+ lon : 0 
+ servers_link : https://downloads.nordcdn.com/configs/files/ovpn_legacy/servers/us6221.nordvpn.com.tcp443.ovpn 
+ server : us6221.nordvpn.com.tcp443.ovpn 
+ down : FALSE 
+ latency : 83 
+ stamp : 2020-11-12 02:26:17 
+[ 2020-11-12 02:26:24 ] 
+
+Already has now 101 servers
+
+
