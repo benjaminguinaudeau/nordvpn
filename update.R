@@ -34,10 +34,10 @@ server_info <- server %>%
 
 log("writing file")
 
-already <- dplyr::bind_rows(server_info, already) %>%
-  dplyr::group_by(server) %>%
-  dplyr::arrange(desc(stamp)) %>%
-  dplyr::slice(1)
+already <- dplyr::bind_rows(server_info, already) #%>%
+  # dplyr::group_by(server) %>%
+  # dplyr::arrange(desc(stamp)) %>%
+  # dplyr::slice(1)
 
 log(paste(nrow(already), "\n\n\n"))
 
