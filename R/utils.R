@@ -103,7 +103,7 @@ update_server_data <- function(n = 10, country = NULL){
   tictoc::tic()
   server_info <- server %>%
     dplyr::sample_n(n) %>%
-    split(1:nrow(.)) %>% bashR::simule_map(1)
+    split(1:nrow(.)) %>%
     purrr::map_dfr(~{
       out <- try(get_server_info(.x))
       if(inherits(out, "try-error")) return(tibble::tibble())
