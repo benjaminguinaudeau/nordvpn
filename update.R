@@ -3,9 +3,7 @@ if(Sys.getenv("api_a") == "") stop("API token cannot be retrieved")
 library(dplyr)
 source("R/utils.R")
 
-
-
-log <- function(msg){write(as.character(msg), file= "log.txt", append=TRUE)}
+log <- function(msg){write(glue::glue("[ {Sys.time()} ] {msg}"), file= "log.txt", append=TRUE)}
 
 # update_server_data(n = 50)
 # Sys.sleep(30)
@@ -31,14 +29,17 @@ server_info <- server %>%
     out <- try(get_server_info(.x))
     if(inherits(out, "try-error")) return(dplyr::tibble())
     return(out)
-  })%>%
-  dplyr::glimpse()
+  })
 # tictoc::toc()
+
+log("writing file")
 
 already <- dplyr::bind_rows(server_info, already) %>%
   dplyr::group_by(server) %>%
   dplyr::arrange(desc(stamp)) %>%
   dplyr::slice(1)
+
+log(paste(nrow(already), "\n\n\n"))
 
 
 saveRDS(already, "data/servers.rds")

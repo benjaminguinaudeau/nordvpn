@@ -96,9 +96,13 @@ get_server_info <- function(server){
 
   log("ip_info")
 
-  dplyr::bind_cols(ip_info, server, down) %>%
+  out <- dplyr::bind_cols(ip_info, server, down) %>%
     dplyr::mutate(config =list(config),
                   stamp = lubridate::now())
+
+  log(capture.output(dplyr::glimpse(out)))
+
+  return(out)
 }
 
 #' update_server_data
