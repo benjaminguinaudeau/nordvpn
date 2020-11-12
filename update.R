@@ -5,7 +5,7 @@ log <- function(msg){writeLines(as.character(msg), "log.txt")}
 
 # update_server_data(n = 50)
 # Sys.sleep(30)
-n <- 50
+n <- 5
 country <- NULL
 
 
