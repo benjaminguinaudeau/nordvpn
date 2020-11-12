@@ -157,7 +157,7 @@ update_server_data <- function(n = 10, country = NULL){
 
 #' get_servers
 #' @export
-get_servers <- function(n = 0, country = NULL){
+get_servers <- function(n = 0, country = NULL, credential_path = NULL){
 
   if(is.null(country)){
     server <- readr::read_rds(url("https://github.com/benjaminguinaudeau/nordvpn/blob/master/data/servers.rds?raw=true"))
@@ -171,6 +171,12 @@ get_servers <- function(n = 0, country = NULL){
       dplyr::sample_n(10, replace = T) %>%
       dplyr::distinct()
   }
+
+  if(!is.null(credential_path)){
+    server$config <- server$config %>%
+      purrr::map(~c(.x, glue::glue("auth-user-pass {credential_path}")))
+  }
+
 
   return(server)
 }

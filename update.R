@@ -5,7 +5,7 @@ source("R/utils.R")
 
 # update_server_data(n = 50)
 # Sys.sleep(30)
-n <- 10
+n <- 300
 country <- NULL
 
 server <- get_server_list(country = country)

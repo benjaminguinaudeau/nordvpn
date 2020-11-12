@@ -33,12 +33,10 @@ get_config_file(country = NULL, city = NULL, region = NULL, ip = NULL, credentia
   return(config_file)
 }
 
-if(!is.null(credential_path)){
-  config <- c(config, glue::glue("auth-user-pass {credential_path}"))
-}
+
 
 update_server_data(n = 10)
-get_servers()
+get_servers(credential_path = "/etc/openvpn/auth.txt")
 
 
 tictoc::tic()
