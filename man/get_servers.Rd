@@ -4,7 +4,7 @@
 \alias{get_servers}
 \title{get_servers}
 \usage{
-get_servers(n = 0, country = NULL)
+get_servers(n = 0, country = NULL, credential_path = NULL)
 }
 \description{
 get_servers

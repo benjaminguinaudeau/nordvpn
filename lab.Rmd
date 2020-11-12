@@ -34,17 +34,10 @@ get_config_file(country = NULL, city = NULL, region = NULL, ip = NULL, credentia
 }
 
 
+get_servers()
 
-update_server_data(n = 10)
 get_servers(credential_path = "/etc/openvpn/auth.txt")
 
-
-tictoc::tic()
-d <- readr::read_rds(url("https://github.com/benjaminguinaudeau/nordvpn/blob/master/data/servers.rds?raw=true")) %>%
-  filter(country == "CA")
-tictoc::toc()
-
-d
 ```
 
 ```{r}
