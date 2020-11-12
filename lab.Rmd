@@ -17,6 +17,11 @@ Sys.setenv("api_a" = "e4b6967c-6921-4784-8bba-d78a212fc52a",
            "api_b" = "47bb53dc-f0fb-401c-af62-e54fc011a05c", 
            "api_c" = "c42c9cea-a0ef-47af-9427-bbaf7810a299", 
            "api_d" = "87fda554-5eb3-4e4e-bb2a-09ed72a55d8d")
+
+Sys.unsetenv("api_a") 
+Sys.unsetenv("api_b") 
+Sys.unsetenv("api_c")
+Sys.unsetenv("api_d")
 ```
 
 # Get servers
@@ -36,10 +41,12 @@ update_server_data(n = 10)
 get_servers()
 
 
+tictoc::tic()
+d <- readr::read_rds(url("https://github.com/benjaminguinaudeau/nordvpn/blob/master/data/servers.rds?raw=true")) %>%
+  filter(country == "CA")
+tictoc::toc()
 
-readr::read_rds("https://github.com/benjaminguinaudeau/nordvpn/blob/master/data/servers.rds?raw=true")
-
-
+d
 ```
 
 ```{r}

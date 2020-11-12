@@ -105,9 +105,10 @@ update_server_data <- function(n = 10, country = NULL){
     dplyr::sample_n(n) %>%
     split(1:nrow(.)) %>%
     purrr::map_dfr(~{
-      out <- try(get_server_info(.x))
-      if(inherits(out, "try-error")) return(dplyr::tibble())
-      return(out)
+      get_server_info(.x)
+      # out <- try(get_server_info(.x))
+      # if(inherits(out, "try-error")) return(dplyr::tibble())
+      # return(out)
     })%>%
     dplyr::glimpse()
   # tictoc::toc()
@@ -123,12 +124,20 @@ update_server_data <- function(n = 10, country = NULL){
 
 #' get_servers
 #' @export
-get_servers <- function(n = 0){
-  if(n == 0){
-    readRDS("data/servers.rds")
+get_servers <- function(n = 0, country = NULL){
+
+  if(is.null(country)){
+    server <- readr::read_rds(url("https://github.com/benjaminguinaudeau/nordvpn/blob/master/data/servers.rds?raw=true"))
   } else {
-    readRDS("data/servers.rds") %>%
+    server <- readr::read_rds(url("https://github.com/benjaminguinaudeau/nordvpn/blob/master/data/servers.rds?raw=true")) %>%
+      dplyr::filter(country == !!country)
+  }
+
+  if(n != 0){
+    server <- server %>%
       dplyr::sample_n(10, replace = T) %>%
       dplyr::distinct()
   }
+
+  return(server)
 }
