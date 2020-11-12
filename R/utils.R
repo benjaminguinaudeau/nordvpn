@@ -3,13 +3,16 @@
 is_server_down <- function(ip){
   ping <- suppressWarnings(base::system(glue::glue("ping {ip}"), wait = T, timeout = 1, intern = T))
   log(paste0(ping, collapse = "__"))
-  down <- as.numeric(stringr::str_extract(stringr::str_subset(ping, "received"), "\\d(?= received)")) == 0
+  down <- as.numeric(stringr::str_extract(stringr::str_subset(ping, "received"), "\\d(?=.*?received)")) == 0
+  log(down)
 
   if(!down){
-    latency <- as.numeric(stringr::str_extract(stringr::str_subset(ping, "time\\="), "(?<=time\\=)(\\d|\\.)+"))
+    latency <- as.numeric(stringr::str_extract(stringr::str_subset(ping, "time\\="), "(?<=time\\=)(\\d|\\.)+")[1])
   } else {
     latency <- 0
   }
+
+  log(latency)
 
   dplyr::tibble(down, latency)
 }
