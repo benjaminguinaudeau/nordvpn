@@ -1,0 +1,60 @@
+---
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "100%"
+)
+
+devtools::load_all()
+```
+
+
+
+# nordvpn
+
+<!-- badges: start -->
+<!-- badges: end -->
+
+The goal of nordvpn is to provide updated data on the servers of nordvpn. It can be used to retrieve fast servers and config file depending on specific geographic location. 
+
+## Installation
+
+
+``` r
+# install.packages("devtools")
+devtools::install_github("benjaminguinaudeau/nordvpn")
+```
+## Example
+
+If you want to get the complete liste of servers available:
+
+```{r}
+nordvpn::get_servers() %>%
+  dplyr::glimpse()
+```
+
+For specific country: 
+
+```{r}
+
+nordvpn::get_servers(country = "US") %>%
+  dplyr::glimpse()
+
+```
+
+You can also specify a credential path. This will append the path to the credential file to the config file entailed in the data. 
+
+```{r}
+
+nordvpn::get_servers(country = "US", credential_path = "/etc/openvpn/auth.txt") %>%
+  dplyr::glimpse()
+
+```
+
