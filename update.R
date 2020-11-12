@@ -1,7 +1,7 @@
 library(dplyr)
 source("R/utils.R")
 
-log <- function(msg){writeLines(as.character(msg), "log.txt")}
+log <- function(msg){write(as.character(msg), file= "log.txt", append=TRUE)}
 
 # update_server_data(n = 50)
 # Sys.sleep(30)

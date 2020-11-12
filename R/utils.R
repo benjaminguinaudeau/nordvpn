@@ -2,7 +2,9 @@
 #' @export
 is_server_down <- function(ip){
   ping <- suppressWarnings(base::system(glue::glue("ping {ip}"), wait = T, timeout = 1, intern = T))
+  log(paste0(ping, collapse = "__"))
   down <- as.numeric(stringr::str_extract(stringr::str_subset(ping, "received"), "\\d(?= received)")) == 0
+
   if(!down){
     latency <- as.numeric(stringr::str_extract(stringr::str_subset(ping, "time\\="), "(?<=time\\=)(\\d|\\.)+"))
   } else {
