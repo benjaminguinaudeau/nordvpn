@@ -161,13 +161,13 @@ get_servers <- function(n = 0, country = NULL, region = NULL, city = NULL, crede
 
   if(!is.null(country)){
     server <- readr::read_rds(url("https://github.com/benjaminguinaudeau/nordvpn/blob/master/data/servers.rds?raw=true")) %>%
-      dplyr::filter(country == !!tolower(country))
+      dplyr::filter(tolower(country) == !!tolower(country))
   } else if(!is.null(region)){
     server <- readr::read_rds(url("https://github.com/benjaminguinaudeau/nordvpn/blob/master/data/servers.rds?raw=true")) %>%
-      dplyr::filter(region == !!tolower(region))
+      dplyr::filter(tolower(region) == !!tolower(region))
   } else if(!is.null(city)){
     server <- readr::read_rds(url("https://github.com/benjaminguinaudeau/nordvpn/blob/master/data/servers.rds?raw=true")) %>%
-      dplyr::filter(city == !!tolower(city))
+      dplyr::filter(tolower(city) == !!tolower(city))
   } else {
     server <- readr::read_rds(url("https://github.com/benjaminguinaudeau/nordvpn/blob/master/data/servers.rds?raw=true"))
   }
