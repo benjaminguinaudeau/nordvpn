@@ -94,3 +94,40 @@ FALSE
 14.555
 FALSE
 ip_info
+https://downloads.nordcdn.com/configs/files/ovpn_legacy/servers/ca983.nordvpn.com.tcp443.ovpn
+ca983.nordvpn.com.tcp443.ovpn
+66.115.147.163
+PING 66.115.147.163 (66.115.147.163): 56 data bytes__64 bytes from 66.115.147.163: icmp_seq=0 ttl=251 time=67.703 ms__64 bytes from 66.115.147.163: icmp_seq=1 ttl=251 time=67.369 ms
+
+https://downloads.nordcdn.com/configs/files/ovpn_legacy/servers/ro70.nordvpn.com.tcp443.ovpn
+ro70.nordvpn.com.tcp443.ovpn
+89.40.71.99
+PING 89.40.71.99 (89.40.71.99): 56 data bytes__64 bytes from 89.40.71.99: icmp_seq=0 ttl=251 time=117.181 ms____--- 89.40.71.99 ping statistics ---__2 packets transmitted, 1 packets received, 50.0% packet loss__round-trip min/avg/max/stddev = 117.181/117.181/117.181/0.000 ms
+FALSE
+117.181
+FALSE
+ip_info
+https://downloads.nordcdn.com/configs/files/ovpn_legacy/servers/us6298.nordvpn.com.tcp443.ovpn
+us6298.nordvpn.com.tcp443.ovpn
+107.173.69.155
+PING 107.173.69.155 (107.173.69.155): 56 data bytes__64 bytes from 107.173.69.155: icmp_seq=0 ttl=251 time=16.558 ms____--- 107.173.69.155 ping statistics ---__1 packets transmitted, 1 packets received, 0.0% packet loss__round-trip min/avg/max/stddev = 16.558/16.558/16.558/0.000 ms
+FALSE
+16.558
+FALSE
+ip_info
+https://downloads.nordcdn.com/configs/files/ovpn_legacy/servers/us5694.nordvpn.com.tcp443.ovpn
+us5694.nordvpn.com.tcp443.ovpn
+66.115.157.120
+PING 66.115.157.120 (66.115.157.120): 56 data bytes__64 bytes from 66.115.157.120: icmp_seq=0 ttl=251 time=75.336 ms____--- 66.115.157.120 ping statistics ---__2 packets transmitted, 1 packets received, 50.0% packet loss__round-trip min/avg/max/stddev = 75.336/75.336/75.336/0.000 ms
+FALSE
+75.336
+FALSE
+ip_info
+https://downloads.nordcdn.com/configs/files/ovpn_legacy/servers/us5878.nordvpn.com.tcp443.ovpn
+us5878.nordvpn.com.tcp443.ovpn
+194.180.179.35
+PING 194.180.179.35 (194.180.179.35): 56 data bytes__64 bytes from 194.180.179.35: icmp_seq=0 ttl=251 time=62.948 ms____--- 194.180.179.35 ping statistics ---__1 packets transmitted, 1 packets received, 0.0% packet loss__round-trip min/avg/max/stddev = 62.948/62.948/62.948/0.000 ms
+FALSE
+62.948
+FALSE
+ip_info
