@@ -1,5 +1,9 @@
+if(Sys.getenv("api_a") == "") stop("API token cannot be retrieved")
+
 library(dplyr)
 source("R/utils.R")
+
+
 
 log <- function(msg){write(as.character(msg), file= "log.txt", append=TRUE)}
 
