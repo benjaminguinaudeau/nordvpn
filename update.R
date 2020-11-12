@@ -15,30 +15,31 @@ if(base::file.exists("data/servers.rds")){
 } else {
   already <- dplyr::tibble()
 }
+try({
+  server_info <- server %>%
+    dplyr::sample_n(n) %>%
+    split(1:nrow(.)) %>%
+    purrr::map_dfr(~{
+      # get_server_info(.x)
+      out <- try(get_server_info(.x, verbose = F))
+      if(inherits(out, "try-error")) return(dplyr::tibble())
 
-server_info <- server %>%
-  dplyr::sample_n(n) %>%
-  split(1:nrow(.)) %>%
-  purrr::map_dfr(~{
-    # get_server_info(.x)
-    out <- try(get_server_info(.x, verbose = F))
-    if(inherits(out, "try-error")) return(dplyr::tibble())
+      out %>%
+        dplyr::select(-config) %>%
+        purrr::imap_chr(~{glue::glue(" {.y} : {.x} ")}) %>%
+        paste(collapse = "\n") %>%
+        paste0("\n", .) %>%
+        write_log()
 
-    out %>%
-      dplyr::select(-config) %>%
-      purrr::imap_chr(~{glue::glue(" {.y} : {.x} ")}) %>%
-      paste(collapse = "\n") %>%
-      paste0("\n", .) %>%
-      write_log()
+      return(out)
+    })
 
-    return(out)
-  })
+  already <- dplyr::bind_rows(server_info, already) %>%
+    dplyr::group_by(server) %>%
+    dplyr::arrange(desc(stamp)) %>%
+    dplyr::slice(1)
 
-already <- dplyr::bind_rows(server_info, already) %>%
-  dplyr::group_by(server) %>%
-  dplyr::arrange(desc(stamp)) %>%
-  dplyr::slice(1)
+  write_log(glue::glue("\n\n\nAlready has now {nrow(already)} servers\n\n\n"))
 
-write_log(glue::glue("\n\n\nAlready has now {nrow(already)} servers\n\n\n"))
-
-saveRDS(already, file = "data/servers.rds")
+  saveRDS(already, file = "data/servers.rds")
+})
