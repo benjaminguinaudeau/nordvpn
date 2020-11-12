@@ -53,8 +53,9 @@ You can also specify a credential path. This will append the path to the credent
 
 ```{r}
 
-nordvpn::get_servers(country = "US", credential_path = "/etc/openvpn/auth.txt") %>%
-  dplyr::glimpse()
-
+nordvpn::get_servers(country = "US", credential_path = "/etc/openvpn/auth.txt")  %>%
+  dplyr::pull(config) %>%
+  purrr::map(tail, 3)
+  
 ```
 
