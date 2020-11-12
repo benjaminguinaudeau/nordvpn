@@ -43,5 +43,5 @@ log(glue::glue("already {nrow(already)}"))
 
 log(paste(nrow(already), "\n\n\n"))
 
-
-try(saveRDS(already, "data/servers.rds"))
+try(save(already, "data/server.Rdata"))
+try(saveRDS(already, file = "data/servers.rds"))
