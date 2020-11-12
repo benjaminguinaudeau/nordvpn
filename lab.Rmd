@@ -27,16 +27,56 @@ Sys.unsetenv("api_d")
 # Get servers
 
 ```{r}
-
 get_config_file(country = NULL, city = NULL, region = NULL, ip = NULL, credential_path <- "/etc/openvpn/auth.txt"){
   
   return(config_file)
 }
 
 usethis::use_readme_rmd()
-get_servers()
+tictoc::tic()
+servers <- get_servers()
+tictoc::toc()
 
-get_servers(credential_path = "/etc/openvpn/auth.txt")
+servers %>% 
+  dplyr::mutate(us_server = stringr::str_detect(server, "^us"), 
+         us_geo = country == "US") %>%
+  dplyr::count(us_server, us_geo)
+
+tictoc::tic()
+get_servers(country = "US")
+tictoc::toc()
+
+library(tidyverse)
+```
+
+
+```{r, fig.height = 8, fig.width = 4}
+servers <- get_servers()
+
+servers %>%
+  filter(region != "") %>%
+  group_by(region) %>%
+  filter(n() > 10) %>%
+  mutate(mean_latency = mean(latency, na.rm = T)) %>%
+  ungroup %>%
+  mutate(region = fct_reorder(paste(country, region, sep = "-"), mean_latency)) %>%
+  ggplot(aes(x = region, y = latency)) + geom_boxplot(outlier.alpha = 0) + coord_flip() +
+  theme_bw() +
+  labs(x = "region", y = "Latency (in ms)")
+
+```
+
+
+```{r, fig.height = 6, fig.width = 4}
+servers %>%
+  group_by(country) %>%
+  filter(n() > 10) %>%
+  mutate(mean_latency = mean(latency, na.rm = T)) %>%
+  ungroup %>%
+  mutate(country = fct_reorder(country, mean_latency)) %>%
+  ggplot(aes(x = country, y = latency)) + geom_boxplot(outlier.alpha = 0) + coord_flip() +
+  theme_bw() +
+  labs(x = "Country", y = "Latency (in ms)")
 
 ```
 

@@ -15,6 +15,7 @@ if(base::file.exists("data/servers.rds")){
 } else {
   already <- dplyr::tibble()
 }
+
 try({
   server_info <- server %>%
     dplyr::sample_n(n) %>%
@@ -33,6 +34,8 @@ try({
 
       return(out)
     })
+
+  saveRDS(server_info, file = glue::glue("data/dump/{as.numeric(lubridate::now())}.rds"))
 
   already <- dplyr::bind_rows(server_info, already) %>%
     dplyr::group_by(server) %>%
