@@ -157,13 +157,19 @@ update_server_data <- function(n = 10, country = NULL){
 
 #' get_servers
 #' @export
-get_servers <- function(n = 0, country = NULL, credential_path = NULL){
+get_servers <- function(n = 0, country = NULL, region = NULL, city = NULL, credential_path = NULL){
 
-  if(is.null(country)){
-    server <- readr::read_rds(url("https://github.com/benjaminguinaudeau/nordvpn/blob/master/data/servers.rds?raw=true"))
-  } else {
+  if(!is.null(country)){
     server <- readr::read_rds(url("https://github.com/benjaminguinaudeau/nordvpn/blob/master/data/servers.rds?raw=true")) %>%
-      dplyr::filter(country == !!country)
+      dplyr::filter(country == !!tolower(country))
+  } else if(!is.null(region)){
+    server <- readr::read_rds(url("https://github.com/benjaminguinaudeau/nordvpn/blob/master/data/servers.rds?raw=true")) %>%
+      dplyr::filter(region == !!tolower(region))
+  } else if(!is.null(city)){
+    server <- readr::read_rds(url("https://github.com/benjaminguinaudeau/nordvpn/blob/master/data/servers.rds?raw=true")) %>%
+      dplyr::filter(city == !!tolower(city))
+  } else {
+    server <- readr::read_rds(url("https://github.com/benjaminguinaudeau/nordvpn/blob/master/data/servers.rds?raw=true"))
   }
 
   if(n != 0){

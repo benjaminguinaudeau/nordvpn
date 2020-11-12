@@ -25,23 +25,23 @@ If you want to get the complete liste of servers available:
 ``` r
 nordvpn::get_servers() %>%
   dplyr::glimpse()
-#> Rows: 101
+#> Rows: 3,350
 #> Columns: 14
-#> Groups: server [101]
-#> $ ip           <chr> "45.248.79.155", "103.1.212.163", "144.48.36.19", "103.1…
-#> $ country      <chr> "AU", "AU", "AU", "AU", "AU", "AU", "AU", "AU", "AU", "A…
-#> $ tz           <chr> "Australia/Adelaide", "Australia/Sydney", "Australia/Syd…
-#> $ region       <chr> "South Australia", "New South Wales", "New South Wales",…
-#> $ city         <chr> "Adelaide", "Leichhardt", "Sydney", "Brisbane", "Perth",…
+#> Groups: server [3,350]
+#> $ ip           <chr> "31.171.152.19", "80.246.28.33", "31.171.152.11", "31.17…
+#> $ country      <chr> "AL", "AL", "AL", "AL", "AL", "AL", "AL", "AR", "AR", "A…
+#> $ tz           <chr> "Europe/Tirane", "Europe/Tirane", "Europe/Tirane", "Euro…
+#> $ region       <chr> "", "Tirana District", "", "", "", "Tirana District", "T…
+#> $ city         <chr> "", "Tirana", "", "", "", "Tirana", "Tirana", "Buenos Ai…
 #> $ zip          <chr> "", "", "", "", "", "", "", "", "", "", "", "", "", "", …
 #> $ lat          <int> 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,…
 #> $ lon          <int> 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,…
 #> $ servers_link <chr> "https://downloads.nordcdn.com/configs/files/ovpn_legacy…
-#> $ server       <chr> "au527.nordvpn.com.tcp443.ovpn", "au538.nordvpn.com.tcp4…
+#> $ server       <chr> "al18.nordvpn.com.tcp443.ovpn", "al19.nordvpn.com.tcp443…
 #> $ down         <lgl> FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, …
-#> $ latency      <dbl> 218.051, 188.161, 195.761, 236.000, 267.000, 265.000, 21…
-#> $ config       <list> [<"client", "dev tun", "proto tcp", "remote 45.248.79.1…
-#> $ stamp        <dttm> 2020-11-12 02:18:59, 2020-11-12 02:22:20, 2020-11-12 02…
+#> $ latency      <dbl> 128.147, 128.929, 126.225, 123.967, 141.131, 122.736, 12…
+#> $ config       <list> [<"client", "dev tun", "proto tcp", "remote 31.171.152.…
+#> $ stamp        <dttm> 2020-11-12 03:41:42, 2020-11-12 05:53:19, 2020-11-12 03…
 ```
 
 For specific country:
@@ -50,23 +50,23 @@ For specific country:
 
 nordvpn::get_servers(country = "US") %>%
   dplyr::glimpse()
-#> Rows: 33
+#> Rows: 0
 #> Columns: 14
-#> Groups: server [33]
-#> $ ip           <chr> "2.56.254.67", "208.91.107.131", "66.115.176.140", "96.9…
-#> $ country      <chr> "US", "US", "US", "US", "US", "US", "US", "US", "US", "U…
-#> $ tz           <chr> "America/New_York", "America/Los_Angeles", "America/Los_…
-#> $ region       <chr> "New Jersey", "California", "California", "New York", ""…
-#> $ city         <chr> "Secaucus", "Los Angeles", "San Jose", "Buffalo", "", "D…
-#> $ zip          <chr> "", "", "", "", "", "", "", "", "", "", "", "", "", "", …
-#> $ lat          <int> 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,…
-#> $ lon          <int> 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,…
-#> $ servers_link <chr> "https://downloads.nordcdn.com/configs/files/ovpn_legacy…
-#> $ server       <chr> "us5097.nordvpn.com.tcp443.ovpn", "us5229.nordvpn.com.tc…
-#> $ down         <lgl> FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, …
-#> $ latency      <dbl> 7.380, 38.000, 75.963, 19.600, 75.400, 53.100, 119.000, …
-#> $ config       <list> [<"client", "dev tun", "proto tcp", "remote 2.56.254.67…
-#> $ stamp        <dttm> 2020-11-12 02:20:26, 2020-11-11 23:49:59, 2020-11-12 02…
+#> Groups: server [0]
+#> $ ip           <chr> 
+#> $ country      <chr> 
+#> $ tz           <chr> 
+#> $ region       <chr> 
+#> $ city         <chr> 
+#> $ zip          <chr> 
+#> $ lat          <int> 
+#> $ lon          <int> 
+#> $ servers_link <chr> 
+#> $ server       <chr> 
+#> $ down         <lgl> 
+#> $ latency      <dbl> 
+#> $ config       <list> []
+#> $ stamp        <dttm>
 ```
 
 You can also specify a credential path. This will append the path to the
@@ -77,168 +77,5 @@ credential file to the config file entailed in the data.
 nordvpn::get_servers(country = "US", credential_path = "/etc/openvpn/auth.txt")  %>%
   dplyr::pull(config) %>%
   purrr::map(tail, 3)
-#> [[1]]
-#> [1] "-----END OpenVPN Static key V1-----" 
-#> [2] "</tls-auth>"                         
-#> [3] "auth-user-pass /etc/openvpn/auth.txt"
-#> 
-#> [[2]]
-#> [1] "-----END OpenVPN Static key V1-----" 
-#> [2] "</tls-auth>"                         
-#> [3] "auth-user-pass /etc/openvpn/auth.txt"
-#> 
-#> [[3]]
-#> [1] "-----END OpenVPN Static key V1-----" 
-#> [2] "</tls-auth>"                         
-#> [3] "auth-user-pass /etc/openvpn/auth.txt"
-#> 
-#> [[4]]
-#> [1] "-----END OpenVPN Static key V1-----" 
-#> [2] "</tls-auth>"                         
-#> [3] "auth-user-pass /etc/openvpn/auth.txt"
-#> 
-#> [[5]]
-#> [1] "-----END OpenVPN Static key V1-----" 
-#> [2] "</tls-auth>"                         
-#> [3] "auth-user-pass /etc/openvpn/auth.txt"
-#> 
-#> [[6]]
-#> [1] "-----END OpenVPN Static key V1-----" 
-#> [2] "</tls-auth>"                         
-#> [3] "auth-user-pass /etc/openvpn/auth.txt"
-#> 
-#> [[7]]
-#> [1] "-----END OpenVPN Static key V1-----" 
-#> [2] "</tls-auth>"                         
-#> [3] "auth-user-pass /etc/openvpn/auth.txt"
-#> 
-#> [[8]]
-#> [1] "-----END OpenVPN Static key V1-----" 
-#> [2] "</tls-auth>"                         
-#> [3] "auth-user-pass /etc/openvpn/auth.txt"
-#> 
-#> [[9]]
-#> [1] "-----END OpenVPN Static key V1-----" 
-#> [2] "</tls-auth>"                         
-#> [3] "auth-user-pass /etc/openvpn/auth.txt"
-#> 
-#> [[10]]
-#> [1] "-----END OpenVPN Static key V1-----" 
-#> [2] "</tls-auth>"                         
-#> [3] "auth-user-pass /etc/openvpn/auth.txt"
-#> 
-#> [[11]]
-#> [1] "-----END OpenVPN Static key V1-----" 
-#> [2] "</tls-auth>"                         
-#> [3] "auth-user-pass /etc/openvpn/auth.txt"
-#> 
-#> [[12]]
-#> [1] "-----END OpenVPN Static key V1-----" 
-#> [2] "</tls-auth>"                         
-#> [3] "auth-user-pass /etc/openvpn/auth.txt"
-#> 
-#> [[13]]
-#> [1] "-----END OpenVPN Static key V1-----" 
-#> [2] "</tls-auth>"                         
-#> [3] "auth-user-pass /etc/openvpn/auth.txt"
-#> 
-#> [[14]]
-#> [1] "-----END OpenVPN Static key V1-----" 
-#> [2] "</tls-auth>"                         
-#> [3] "auth-user-pass /etc/openvpn/auth.txt"
-#> 
-#> [[15]]
-#> [1] "-----END OpenVPN Static key V1-----" 
-#> [2] "</tls-auth>"                         
-#> [3] "auth-user-pass /etc/openvpn/auth.txt"
-#> 
-#> [[16]]
-#> [1] "-----END OpenVPN Static key V1-----" 
-#> [2] "</tls-auth>"                         
-#> [3] "auth-user-pass /etc/openvpn/auth.txt"
-#> 
-#> [[17]]
-#> [1] "-----END OpenVPN Static key V1-----" 
-#> [2] "</tls-auth>"                         
-#> [3] "auth-user-pass /etc/openvpn/auth.txt"
-#> 
-#> [[18]]
-#> [1] "-----END OpenVPN Static key V1-----" 
-#> [2] "</tls-auth>"                         
-#> [3] "auth-user-pass /etc/openvpn/auth.txt"
-#> 
-#> [[19]]
-#> [1] "-----END OpenVPN Static key V1-----" 
-#> [2] "</tls-auth>"                         
-#> [3] "auth-user-pass /etc/openvpn/auth.txt"
-#> 
-#> [[20]]
-#> [1] "-----END OpenVPN Static key V1-----" 
-#> [2] "</tls-auth>"                         
-#> [3] "auth-user-pass /etc/openvpn/auth.txt"
-#> 
-#> [[21]]
-#> [1] "-----END OpenVPN Static key V1-----" 
-#> [2] "</tls-auth>"                         
-#> [3] "auth-user-pass /etc/openvpn/auth.txt"
-#> 
-#> [[22]]
-#> [1] "-----END OpenVPN Static key V1-----" 
-#> [2] "</tls-auth>"                         
-#> [3] "auth-user-pass /etc/openvpn/auth.txt"
-#> 
-#> [[23]]
-#> [1] "-----END OpenVPN Static key V1-----" 
-#> [2] "</tls-auth>"                         
-#> [3] "auth-user-pass /etc/openvpn/auth.txt"
-#> 
-#> [[24]]
-#> [1] "-----END OpenVPN Static key V1-----" 
-#> [2] "</tls-auth>"                         
-#> [3] "auth-user-pass /etc/openvpn/auth.txt"
-#> 
-#> [[25]]
-#> [1] "-----END OpenVPN Static key V1-----" 
-#> [2] "</tls-auth>"                         
-#> [3] "auth-user-pass /etc/openvpn/auth.txt"
-#> 
-#> [[26]]
-#> [1] "-----END OpenVPN Static key V1-----" 
-#> [2] "</tls-auth>"                         
-#> [3] "auth-user-pass /etc/openvpn/auth.txt"
-#> 
-#> [[27]]
-#> [1] "-----END OpenVPN Static key V1-----" 
-#> [2] "</tls-auth>"                         
-#> [3] "auth-user-pass /etc/openvpn/auth.txt"
-#> 
-#> [[28]]
-#> [1] "-----END OpenVPN Static key V1-----" 
-#> [2] "</tls-auth>"                         
-#> [3] "auth-user-pass /etc/openvpn/auth.txt"
-#> 
-#> [[29]]
-#> [1] "-----END OpenVPN Static key V1-----" 
-#> [2] "</tls-auth>"                         
-#> [3] "auth-user-pass /etc/openvpn/auth.txt"
-#> 
-#> [[30]]
-#> [1] "-----END OpenVPN Static key V1-----" 
-#> [2] "</tls-auth>"                         
-#> [3] "auth-user-pass /etc/openvpn/auth.txt"
-#> 
-#> [[31]]
-#> [1] "-----END OpenVPN Static key V1-----" 
-#> [2] "</tls-auth>"                         
-#> [3] "auth-user-pass /etc/openvpn/auth.txt"
-#> 
-#> [[32]]
-#> [1] "-----END OpenVPN Static key V1-----" 
-#> [2] "</tls-auth>"                         
-#> [3] "auth-user-pass /etc/openvpn/auth.txt"
-#> 
-#> [[33]]
-#> [1] "-----END OpenVPN Static key V1-----" 
-#> [2] "</tls-auth>"                         
-#> [3] "auth-user-pass /etc/openvpn/auth.txt"
+#> list()
 ```

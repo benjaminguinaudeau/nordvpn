@@ -33,7 +33,7 @@ get_config_file(country = NULL, city = NULL, region = NULL, ip = NULL, credentia
   return(config_file)
 }
 
-
+usethis::use_readme_rmd()
 get_servers()
 
 get_servers(credential_path = "/etc/openvpn/auth.txt")
