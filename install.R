@@ -1,2 +1,2 @@
-install.packages(c("dplyr", "rvest", "jsonlite", "stringr", "purrr", "httr"))
+install.packages(c("dplyr", "rvest", "jsonlite", "stringr", "purrr", "httr", "glue"))
 

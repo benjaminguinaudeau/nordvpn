@@ -80,8 +80,16 @@ get_server_info <- function(server){
     stringr::str_subset("remote ") %>%
     stringr::str_remove("remote ") %>%
     stringr::str_remove(" 443")
+
+  log(ip)
+
   down <- is_server_down(ip)
+
+  log(down$down)
+
   ip_info <- get_ip_info(ip, verbose = T)
+
+  log("ip_info")
 
   dplyr::bind_cols(ip_info, server, down) %>%
     dplyr::mutate(config =list(config),

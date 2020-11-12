@@ -1,4 +1,40 @@
 library(dplyr)
 source("R/utils.R")
-update_server_data(n = 50)
+
+log <- function(msg){writeLines(as.character(msg), "log.txt")}
+
+# update_server_data(n = 50)
 # Sys.sleep(30)
+n <- 50
+country <- NULL
+
+
+server <- get_server_list(country = country)
+
+if(base::file.exists("data/servers.rds")){
+  already <- readRDS("data/servers.rds")
+} else {
+  already <- dplyr::tibble()
+}
+
+# tictoc::tic()
+server_info <- server %>%
+  dplyr::sample_n(n) %>%
+  split(1:nrow(.)) %>%
+  purrr::map_dfr(~{
+    log(.x)
+    # get_server_info(.x)
+    out <- try(get_server_info(.x))
+    if(inherits(out, "try-error")) return(dplyr::tibble())
+    return(out)
+  })%>%
+  dplyr::glimpse()
+# tictoc::toc()
+
+already <- dplyr::bind_rows(server_info, already) %>%
+  dplyr::group_by(server) %>%
+  dplyr::arrange(desc(stamp)) %>%
+  dplyr::slice(1)
+
+
+saveRDS(already, "data/servers.rds")
