@@ -39,6 +39,8 @@ already <- dplyr::bind_rows(server_info, already) #%>%
   # dplyr::arrange(desc(stamp)) %>%
   # dplyr::slice(1)
 
+log(glue::glue("already {nrow(already)}"))
+
 log(paste(nrow(already), "\n\n\n"))
 
 

@@ -102,11 +102,16 @@ get_server_info <- function(server){
     ip_info <- tibble::tibble(ip = NA)
   }
 
+   log(glue::glue("server {nrow(server)}"))
+  if(nrow(ip_info) == 0){
+    ip_info <- tibble::tibble(ip = NA)
+  }
+
   out <- dplyr::bind_cols(ip_info, server, down) %>%
     dplyr::mutate(config = list(config),
                   stamp = lubridate::now())
 
-  log(capture.output(dplyr::glimpse(out)))
+
 
   return(out)
 }
