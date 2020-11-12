@@ -19,3 +19,38 @@ https://downloads.nordcdn.com/configs/files/ovpn_legacy/servers/us8059.nordvpn.c
 us8059.nordvpn.com.tcp443.ovpn
 193.37.252.43
 PING 193.37.252.43 (193.37.252.43): 56 data bytes__64 bytes from 193.37.252.43: icmp_seq=0 ttl=251 time=26.155 ms____--- 193.37.252.43 ping statistics ---__1 packets transmitted, 1 packets received, 0.0% packet loss__round-trip min/avg/max/stddev = 26.155/26.155/26.155/0.000 ms
+https://downloads.nordcdn.com/configs/files/ovpn_legacy/servers/us8113.nordvpn.com.tcp443.ovpn
+us8113.nordvpn.com.tcp443.ovpn
+185.247.70.147
+PING 185.247.70.147 (185.247.70.147): 56 data bytes__64 bytes from 185.247.70.147: icmp_seq=0 ttl=251 time=33.568 ms____--- 185.247.70.147 ping statistics ---__1 packets transmitted, 1 packets received, 0.0% packet loss__round-trip min/avg/max/stddev = 33.568/33.568/33.568/0.000 ms
+FALSE
+33.568
+FALSE
+https://downloads.nordcdn.com/configs/files/ovpn_legacy/servers/ie112.nordvpn.com.tcp443.ovpn
+ie112.nordvpn.com.tcp443.ovpn
+217.138.222.195
+PING 217.138.222.195 (217.138.222.195): 56 data bytes__64 bytes from 217.138.222.195: icmp_seq=0 ttl=251 time=91.599 ms____--- 217.138.222.195 ping statistics ---__2 packets transmitted, 1 packets received, 50.0% packet loss__round-trip min/avg/max/stddev = 91.599/91.599/91.599/0.000 ms
+FALSE
+91.599
+FALSE
+https://downloads.nordcdn.com/configs/files/ovpn_legacy/servers/uk1875.nordvpn.com.tcp443.ovpn
+uk1875.nordvpn.com.tcp443.ovpn
+89.238.191.202
+PING 89.238.191.202 (89.238.191.202): 56 data bytes__64 bytes from 89.238.191.202: icmp_seq=0 ttl=251 time=76.490 ms__64 bytes from 89.238.191.202: icmp_seq=1 ttl=251 time=83.067 ms____--- 89.238.191.202 ping statistics ---__2 packets transmitted, 2 packets received, 0.0% packet loss__round-trip min/avg/max/stddev = 76.490/79.778/83.067/3.288 ms
+FALSE
+76.49
+FALSE
+https://downloads.nordcdn.com/configs/files/ovpn_legacy/servers/us6499.nordvpn.com.tcp443.ovpn
+us6499.nordvpn.com.tcp443.ovpn
+170.130.7.162
+PING 170.130.7.162 (170.130.7.162): 56 data bytes__64 bytes from 170.130.7.162: icmp_seq=0 ttl=251 time=51.780 ms____--- 170.130.7.162 ping statistics ---__1 packets transmitted, 1 packets received, 0.0% packet loss__round-trip min/avg/max/stddev = 51.780/51.780/51.780/0.000 ms
+FALSE
+51.78
+FALSE
+https://downloads.nordcdn.com/configs/files/ovpn_legacy/servers/hk231.nordvpn.com.tcp443.ovpn
+hk231.nordvpn.com.tcp443.ovpn
+209.58.185.165
+PING 209.58.185.165 (209.58.185.165): 56 data bytes__64 bytes from 209.58.185.165: icmp_seq=0 ttl=251 time=209.170 ms____--- 209.58.185.165 ping statistics ---__2 packets transmitted, 1 packets received, 50.0% packet loss__round-trip min/avg/max/stddev = 209.170/209.170/209.170/0.000 ms
+FALSE
+209.17
+FALSE
