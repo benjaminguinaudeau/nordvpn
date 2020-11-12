@@ -39,6 +39,8 @@ get_ip_info <- function(ip, verbose = T){
   # token <- sample(read_rds("secret/api_token.rds"), 1)
   token <- sample(c(Sys.getenv("api_a"), Sys.getenv("api_b"), Sys.getenv("api_c"), Sys.getenv("api_d")), 1)
 
+  if(token == "") stop("API Token could not be retrieved")
+
   req <- try({
     httr::GET(glue::glue("https://signals.api.auth0.com/v2.0/ip/{ip}"),
               httr::add_headers(.headers = c(
@@ -101,7 +103,7 @@ update_server_data <- function(n = 10, country = NULL){
   tictoc::tic()
   server_info <- server %>%
     dplyr::sample_n(n) %>%
-    split(1:nrow(.)) %>%
+    split(1:nrow(.)) %>% bashR::simule_map(1)
     purrr::map_dfr(~{
       out <- try(get_server_info(.x))
       if(inherits(out, "try-error")) return(tibble::tibble())
