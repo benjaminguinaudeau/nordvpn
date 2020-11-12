@@ -432,3 +432,304 @@ ip_info
 
 
 
+[ 2020-11-12 01:59:59 ] https://downloads.nordcdn.com/configs/files/ovpn_legacy/servers/us6788.nordvpn.com.tcp443.ovpn
+[ 2020-11-12 01:59:59 ] us6788.nordvpn.com.tcp443.ovpn
+[ 2020-11-12 02:00:08 ] 107.181.166.166
+[ 2020-11-12 02:00:09 ] PING 107.181.166.166 (107.181.166.166) 56(84) bytes of data.__64 bytes from 107.181.166.166: icmp_seq=1 ttl=49 time=83.2 ms____--- 107.181.166.166 ping statistics ---__1 packets transmitted, 1 received, 0% packet loss, time 0ms__rtt min/avg/max/mdev = 83.224/83.224/83.224/0.000 ms
+[ 2020-11-12 02:00:09 ] FALSE
+[ 2020-11-12 02:00:09 ] 83.2
+[ 2020-11-12 02:00:09 ] FALSE
+[ 2020-11-12 02:00:11 ] ip_info
+[ 2020-11-12 02:00:11 ] Rows: 1
+[ 2020-11-12 02:00:11 ] Columns: 14
+[ 2020-11-12 02:00:11 ] $ ip           [3m[38;5;246m<chr>[39m[23m "107.181.166.166"
+[ 2020-11-12 02:00:11 ] $ country      [3m[38;5;246m<chr>[39m[23m "US"
+[ 2020-11-12 02:00:11 ] $ tz           [3m[38;5;246m<chr>[39m[23m "America/Los_Angeles"
+[ 2020-11-12 02:00:11 ] $ region       [3m[38;5;246m<chr>[39m[23m "California"
+[ 2020-11-12 02:00:11 ] $ city         [3m[38;5;246m<chr>[39m[23m "San Francisco"
+[ 2020-11-12 02:00:11 ] $ zip          [3m[38;5;246m<chr>[39m[23m ""
+[ 2020-11-12 02:00:11 ] $ lat          [3m[38;5;246m<int>[39m[23m 0
+[ 2020-11-12 02:00:11 ] $ lon          [3m[38;5;246m<int>[39m[23m 0
+[ 2020-11-12 02:00:11 ] $ servers_link [3m[38;5;246m<chr>[39m[23m "https://downloads.nordcdn.com/configs/files/ovpn_legacy/servers/us6788.nordvpn.com.tcp443.ovpn"
+[ 2020-11-12 02:00:11 ] $ server       [3m[38;5;246m<chr>[39m[23m "us6788.nordvpn.com.tcp443.ovpn"
+[ 2020-11-12 02:00:11 ] $ down         [3m[38;5;246m<lgl>[39m[23m FALSE
+[ 2020-11-12 02:00:11 ] $ latency      [3m[38;5;246m<dbl>[39m[23m 83.2
+[ 2020-11-12 02:00:11 ] $ config       [3m[38;5;246m<list>[39m[23m [<"client", "dev tun", "proto tcp", "remote 107.181.166.166 443", "resolv-retry infinite", "remote-ran…
+[ 2020-11-12 02:00:11 ] $ stamp        [3m[38;5;246m<dttm>[39m[23m 2020-11-12 02:00:11
+[ 2020-11-12 02:00:11 ] https://downloads.nordcdn.com/configs/files/ovpn_legacy/servers/uk1954.nordvpn.com.tcp443.ovpn
+[ 2020-11-12 02:00:11 ] uk1954.nordvpn.com.tcp443.ovpn
+[ 2020-11-12 02:00:27 ] 195.206.169.220
+[ 2020-11-12 02:00:28 ] PING 195.206.169.220 (195.206.169.220) 56(84) bytes of data.__64 bytes from 195.206.169.220: icmp_seq=1 ttl=52 time=100 ms____--- 195.206.169.220 ping statistics ---__1 packets transmitted, 1 received, 0% packet loss, time 0ms__rtt min/avg/max/mdev = 100.462/100.462/100.462/0.000 ms
+[ 2020-11-12 02:00:28 ] FALSE
+[ 2020-11-12 02:00:28 ] 100
+[ 2020-11-12 02:00:28 ] FALSE
+[ 2020-11-12 02:00:30 ] ip_info
+[ 2020-11-12 02:00:30 ] Rows: 1
+[ 2020-11-12 02:00:30 ] Columns: 14
+[ 2020-11-12 02:00:30 ] $ ip           [3m[38;5;246m<chr>[39m[23m "195.206.169.220"
+[ 2020-11-12 02:00:30 ] $ country      [3m[38;5;246m<chr>[39m[23m "GB"
+[ 2020-11-12 02:00:30 ] $ tz           [3m[38;5;246m<chr>[39m[23m "Europe/London"
+[ 2020-11-12 02:00:30 ] $ region       [3m[38;5;246m<chr>[39m[23m ""
+[ 2020-11-12 02:00:30 ] $ city         [3m[38;5;246m<chr>[39m[23m ""
+[ 2020-11-12 02:00:30 ] $ zip          [3m[38;5;246m<chr>[39m[23m ""
+[ 2020-11-12 02:00:30 ] $ lat          [3m[38;5;246m<int>[39m[23m 0
+[ 2020-11-12 02:00:30 ] $ lon          [3m[38;5;246m<int>[39m[23m 0
+[ 2020-11-12 02:00:30 ] $ servers_link [3m[38;5;246m<chr>[39m[23m "https://downloads.nordcdn.com/configs/files/ovpn_legacy/servers/uk1954.nordvpn.com.tcp443.ovpn"
+[ 2020-11-12 02:00:30 ] $ server       [3m[38;5;246m<chr>[39m[23m "uk1954.nordvpn.com.tcp443.ovpn"
+[ 2020-11-12 02:00:30 ] $ down         [3m[38;5;246m<lgl>[39m[23m FALSE
+[ 2020-11-12 02:00:30 ] $ latency      [3m[38;5;246m<dbl>[39m[23m 100
+[ 2020-11-12 02:00:30 ] $ config       [3m[38;5;246m<list>[39m[23m [<"client", "dev tun", "proto tcp", "remote 195.206.169.220 443", "resolv-retry infinite", "remote-ran…
+[ 2020-11-12 02:00:30 ] $ stamp        [3m[38;5;246m<dttm>[39m[23m 2020-11-12 02:00:30
+[ 2020-11-12 02:00:30 ] https://downloads.nordcdn.com/configs/files/ovpn_legacy/servers/fr554.nordvpn.com.tcp443.ovpn
+[ 2020-11-12 02:00:30 ] fr554.nordvpn.com.tcp443.ovpn
+[ 2020-11-12 02:00:30 ] 89.40.183.29
+[ 2020-11-12 02:00:31 ] PING 89.40.183.29 (89.40.183.29) 56(84) bytes of data.__64 bytes from 89.40.183.29: icmp_seq=1 ttl=52 time=108 ms____--- 89.40.183.29 ping statistics ---__1 packets transmitted, 1 received, 0% packet loss, time 0ms__rtt min/avg/max/mdev = 108.132/108.132/108.132/0.000 ms
+[ 2020-11-12 02:00:31 ] FALSE
+[ 2020-11-12 02:00:31 ] 108
+[ 2020-11-12 02:00:31 ] FALSE
+[ 2020-11-12 02:00:34 ] ip_info
+[ 2020-11-12 02:00:34 ] Rows: 1
+[ 2020-11-12 02:00:34 ] Columns: 14
+[ 2020-11-12 02:00:34 ] $ ip           [3m[38;5;246m<chr>[39m[23m "89.40.183.29"
+[ 2020-11-12 02:00:34 ] $ country      [3m[38;5;246m<chr>[39m[23m "FR"
+[ 2020-11-12 02:00:34 ] $ tz           [3m[38;5;246m<chr>[39m[23m "Europe/Paris"
+[ 2020-11-12 02:00:34 ] $ region       [3m[38;5;246m<chr>[39m[23m "Paris"
+[ 2020-11-12 02:00:34 ] $ city         [3m[38;5;246m<chr>[39m[23m "Paris"
+[ 2020-11-12 02:00:34 ] $ zip          [3m[38;5;246m<chr>[39m[23m ""
+[ 2020-11-12 02:00:34 ] $ lat          [3m[38;5;246m<int>[39m[23m 0
+[ 2020-11-12 02:00:34 ] $ lon          [3m[38;5;246m<int>[39m[23m 0
+[ 2020-11-12 02:00:34 ] $ servers_link [3m[38;5;246m<chr>[39m[23m "https://downloads.nordcdn.com/configs/files/ovpn_legacy/servers/fr554.nordvpn.com.tcp443.ovpn"
+[ 2020-11-12 02:00:34 ] $ server       [3m[38;5;246m<chr>[39m[23m "fr554.nordvpn.com.tcp443.ovpn"
+[ 2020-11-12 02:00:34 ] $ down         [3m[38;5;246m<lgl>[39m[23m FALSE
+[ 2020-11-12 02:00:34 ] $ latency      [3m[38;5;246m<dbl>[39m[23m 108
+[ 2020-11-12 02:00:34 ] $ config       [3m[38;5;246m<list>[39m[23m [<"client", "dev tun", "proto tcp", "remote 89.40.183.29 443", "resolv-retry infinite", "remote-random…
+[ 2020-11-12 02:00:34 ] $ stamp        [3m[38;5;246m<dttm>[39m[23m 2020-11-12 02:00:34
+[ 2020-11-12 02:00:34 ] https://downloads.nordcdn.com/configs/files/ovpn_legacy/servers/fr707.nordvpn.com.tcp443.ovpn
+[ 2020-11-12 02:00:34 ] fr707.nordvpn.com.tcp443.ovpn
+[ 2020-11-12 02:00:34 ] 212.83.151.189
+[ 2020-11-12 02:00:35 ] PING 212.83.151.189 (212.83.151.189) 56(84) bytes of data.__64 bytes from 212.83.151.189: icmp_seq=1 ttl=50 time=110 ms____--- 212.83.151.189 ping statistics ---__1 packets transmitted, 1 received, 0% packet loss, time 0ms__rtt min/avg/max/mdev = 109.723/109.723/109.723/0.000 ms
+[ 2020-11-12 02:00:35 ] FALSE
+[ 2020-11-12 02:00:35 ] 110
+[ 2020-11-12 02:00:35 ] FALSE
+[ 2020-11-12 02:00:38 ] ip_info
+[ 2020-11-12 02:00:38 ] Rows: 1
+[ 2020-11-12 02:00:38 ] Columns: 14
+[ 2020-11-12 02:00:38 ] $ ip           [3m[38;5;246m<chr>[39m[23m "212.83.151.189"
+[ 2020-11-12 02:00:38 ] $ country      [3m[38;5;246m<chr>[39m[23m "FR"
+[ 2020-11-12 02:00:38 ] $ tz           [3m[38;5;246m<chr>[39m[23m "Europe/Paris"
+[ 2020-11-12 02:00:38 ] $ region       [3m[38;5;246m<chr>[39m[23m ""
+[ 2020-11-12 02:00:38 ] $ city         [3m[38;5;246m<chr>[39m[23m ""
+[ 2020-11-12 02:00:38 ] $ zip          [3m[38;5;246m<chr>[39m[23m ""
+[ 2020-11-12 02:00:38 ] $ lat          [3m[38;5;246m<int>[39m[23m 0
+[ 2020-11-12 02:00:38 ] $ lon          [3m[38;5;246m<int>[39m[23m 0
+[ 2020-11-12 02:00:38 ] $ servers_link [3m[38;5;246m<chr>[39m[23m "https://downloads.nordcdn.com/configs/files/ovpn_legacy/servers/fr707.nordvpn.com.tcp443.ovpn"
+[ 2020-11-12 02:00:38 ] $ server       [3m[38;5;246m<chr>[39m[23m "fr707.nordvpn.com.tcp443.ovpn"
+[ 2020-11-12 02:00:38 ] $ down         [3m[38;5;246m<lgl>[39m[23m FALSE
+[ 2020-11-12 02:00:38 ] $ latency      [3m[38;5;246m<dbl>[39m[23m 110
+[ 2020-11-12 02:00:38 ] $ config       [3m[38;5;246m<list>[39m[23m [<"client", "dev tun", "proto tcp", "remote 212.83.151.189 443", "resolv-retry infinite", "remote-rand…
+[ 2020-11-12 02:00:38 ] $ stamp        [3m[38;5;246m<dttm>[39m[23m 2020-11-12 02:00:38
+[ 2020-11-12 02:00:38 ] https://downloads.nordcdn.com/configs/files/ovpn_legacy/servers/us6569.nordvpn.com.tcp443.ovpn
+[ 2020-11-12 02:00:38 ] us6569.nordvpn.com.tcp443.ovpn
+[ 2020-11-12 02:00:38 ] 74.119.146.236
+[ 2020-11-12 02:00:39 ] PING 74.119.146.236 (74.119.146.236) 56(84) bytes of data.__64 bytes from 74.119.146.236: icmp_seq=1 ttl=55 time=30.2 ms____--- 74.119.146.236 ping statistics ---__1 packets transmitted, 1 received, 0% packet loss, time 0ms__rtt min/avg/max/mdev = 30.181/30.181/30.181/0.000 ms
+[ 2020-11-12 02:00:39 ] FALSE
+[ 2020-11-12 02:00:39 ] 30.2
+[ 2020-11-12 02:00:39 ] FALSE
+[ 2020-11-12 02:00:40 ] ip_info
+[ 2020-11-12 02:00:40 ] Rows: 1
+[ 2020-11-12 02:00:40 ] Columns: 14
+[ 2020-11-12 02:00:40 ] $ ip           [3m[38;5;246m<chr>[39m[23m "74.119.146.236"
+[ 2020-11-12 02:00:40 ] $ country      [3m[38;5;246m<chr>[39m[23m "US"
+[ 2020-11-12 02:00:40 ] $ tz           [3m[38;5;246m<chr>[39m[23m "America/Chicago"
+[ 2020-11-12 02:00:40 ] $ region       [3m[38;5;246m<chr>[39m[23m "Illinois"
+[ 2020-11-12 02:00:40 ] $ city         [3m[38;5;246m<chr>[39m[23m "Chicago"
+[ 2020-11-12 02:00:40 ] $ zip          [3m[38;5;246m<chr>[39m[23m ""
+[ 2020-11-12 02:00:40 ] $ lat          [3m[38;5;246m<int>[39m[23m 0
+[ 2020-11-12 02:00:40 ] $ lon          [3m[38;5;246m<int>[39m[23m 0
+[ 2020-11-12 02:00:40 ] $ servers_link [3m[38;5;246m<chr>[39m[23m "https://downloads.nordcdn.com/configs/files/ovpn_legacy/servers/us6569.nordvpn.com.tcp443.ovpn"
+[ 2020-11-12 02:00:40 ] $ server       [3m[38;5;246m<chr>[39m[23m "us6569.nordvpn.com.tcp443.ovpn"
+[ 2020-11-12 02:00:40 ] $ down         [3m[38;5;246m<lgl>[39m[23m FALSE
+[ 2020-11-12 02:00:40 ] $ latency      [3m[38;5;246m<dbl>[39m[23m 30.2
+[ 2020-11-12 02:00:40 ] $ config       [3m[38;5;246m<list>[39m[23m [<"client", "dev tun", "proto tcp", "remote 74.119.146.236 443", "resolv-retry infinite", "remote-rand…
+[ 2020-11-12 02:00:40 ] $ stamp        [3m[38;5;246m<dttm>[39m[23m 2020-11-12 02:00:40
+[ 2020-11-12 02:05:44 ] PING 109.202.111.171 (109.202.111.171) 56(84) bytes of data.__64 bytes from 109.202.111.171: icmp_seq=1 ttl=53 time=104 ms____--- 109.202.111.171 ping statistics ---__1 packets transmitted, 1 received, 0% packet loss, time 0ms__rtt min/avg/max/mdev = 104.180/104.180/104.180/0.000 ms
+[ 2020-11-12 02:05:44 ] FALSE
+[ 2020-11-12 02:05:44 ] 104
+[ 2020-11-12 02:08:42 ] ip:109.202.111.171
+country:NL
+tz:Europe/Amsterdam
+region:North Holland
+city:Amsterdam
+zip:
+lat:0
+lon:0
+servers_link:https://downloads.nordcdn.com/configs/files/ovpn_legacy/servers/nl814.nordvpn.com.tcp443.ovpn
+server:nl814.nordvpn.com.tcp443.ovpn
+down:FALSE
+latency:104
+stamp:2020-11-12 02:05:47
+[ 2020-11-12 02:09:17 ]  ip:109.202.111.171 
+ country:NL 
+ tz:Europe/Amsterdam 
+ region:North Holland 
+ city:Amsterdam 
+ zip: 
+ lat:0 
+ lon:0 
+ servers_link:https://downloads.nordcdn.com/configs/files/ovpn_legacy/servers/nl814.nordvpn.com.tcp443.ovpn 
+ server:nl814.nordvpn.com.tcp443.ovpn 
+ down:FALSE 
+ latency:104 
+ stamp:2020-11-12 02:05:47 
+[ 2020-11-12 02:09:29 ]  ip : 109.202.111.171 
+ country : NL 
+ tz : Europe/Amsterdam 
+ region : North Holland 
+ city : Amsterdam 
+ zip :  
+ lat : 0 
+ lon : 0 
+ servers_link : https://downloads.nordcdn.com/configs/files/ovpn_legacy/servers/nl814.nordvpn.com.tcp443.ovpn 
+ server : nl814.nordvpn.com.tcp443.ovpn 
+ down : FALSE 
+ latency : 104 
+ stamp : 2020-11-12 02:05:47 
+[ 2020-11-12 02:09:58 ] 
+
+[ 2020-11-12 02:09:58 ]  ip : 109.202.111.171 
+ country : NL 
+ tz : Europe/Amsterdam 
+ region : North Holland 
+ city : Amsterdam 
+ zip :  
+ lat : 0 
+ lon : 0 
+ servers_link : https://downloads.nordcdn.com/configs/files/ovpn_legacy/servers/nl814.nordvpn.com.tcp443.ovpn 
+ server : nl814.nordvpn.com.tcp443.ovpn 
+ down : FALSE 
+ latency : 104 
+ stamp : 2020-11-12 02:05:47 
+[ 2020-11-12 02:10:35 ]  ip : 109.202.111.171  
+
+ country : NL   ip : 109.202.111.171 
+ tz : Europe/Amsterdam   country : NL 
+ region : North Holland   tz : Europe/Amsterdam 
+ city : Amsterdam   region : North Holland 
+ zip :    city : Amsterdam 
+ lat : 0   zip :  
+ lon : 0   lat : 0 
+ servers_link : https://downloads.nordcdn.com/configs/files/ovpn_legacy/servers/nl814.nordvpn.com.tcp443.ovpn   lon : 0 
+ server : nl814.nordvpn.com.tcp443.ovpn   servers_link : https://downloads.nordcdn.com/configs/files/ovpn_legacy/servers/nl814.nordvpn.com.tcp443.ovpn 
+ down : FALSE   server : nl814.nordvpn.com.tcp443.ovpn 
+ latency : 104   down : FALSE 
+ stamp : 2020-11-12 02:05:47   latency : 104 
+ ip : 109.202.111.171   stamp : 2020-11-12 02:05:47 
+[ 2020-11-12 02:11:08 ] 
+  ip : 109.202.111.171 
+ country : NL 
+ tz : Europe/Amsterdam 
+ region : North Holland 
+ city : Amsterdam 
+ zip :  
+ lat : 0 
+ lon : 0 
+ servers_link : https://downloads.nordcdn.com/configs/files/ovpn_legacy/servers/nl814.nordvpn.com.tcp443.ovpn 
+ server : nl814.nordvpn.com.tcp443.ovpn 
+ down : FALSE 
+ latency : 104 
+ stamp : 2020-11-12 02:05:47 
+[ 2020-11-12 02:11:19 ] 
+ ip : 109.202.111.171 
+ country : NL 
+ tz : Europe/Amsterdam 
+ region : North Holland 
+ city : Amsterdam 
+ zip :  
+ lat : 0 
+ lon : 0 
+ servers_link : https://downloads.nordcdn.com/configs/files/ovpn_legacy/servers/nl814.nordvpn.com.tcp443.ovpn 
+ server : nl814.nordvpn.com.tcp443.ovpn 
+ down : FALSE 
+ latency : 104 
+ stamp : 2020-11-12 02:05:47 
+[ 2020-11-12 02:12:08 ] https://downloads.nordcdn.com/configs/files/ovpn_legacy/servers/uk1886.nordvpn.com.tcp443.ovpn
+[ 2020-11-12 02:12:08 ] uk1886.nordvpn.com.tcp443.ovpn
+[ 2020-11-12 02:12:10 ] PING 81.92.203.116 (81.92.203.116) 56(84) bytes of data.__64 bytes from 81.92.203.116: icmp_seq=1 ttl=47 time=107 ms____--- 81.92.203.116 ping statistics ---__1 packets transmitted, 1 received, 0% packet loss, time 0ms__rtt min/avg/max/mdev = 107.246/107.246/107.246/0.000 ms
+[ 2020-11-12 02:12:10 ] FALSE
+[ 2020-11-12 02:12:10 ] 107
+[ 2020-11-12 02:12:13 ] https://downloads.nordcdn.com/configs/files/ovpn_legacy/servers/us6494.nordvpn.com.tcp443.ovpn
+[ 2020-11-12 02:12:13 ] us6494.nordvpn.com.tcp443.ovpn
+[ 2020-11-12 02:12:14 ] PING 89.187.177.236 (89.187.177.236) 56(84) bytes of data.__64 bytes from 89.187.177.236: icmp_seq=1 ttl=55 time=36.8 ms____--- 89.187.177.236 ping statistics ---__1 packets transmitted, 1 received, 0% packet loss, time 0ms__rtt min/avg/max/mdev = 36.753/36.753/36.753/0.000 ms
+[ 2020-11-12 02:12:14 ] FALSE
+[ 2020-11-12 02:12:14 ] 36.8
+[ 2020-11-12 02:12:16 ] https://downloads.nordcdn.com/configs/files/ovpn_legacy/servers/us5869.nordvpn.com.tcp443.ovpn
+[ 2020-11-12 02:12:16 ] us5869.nordvpn.com.tcp443.ovpn
+[ 2020-11-12 02:12:17 ] PING 91.196.222.35 (91.196.222.35) 56(84) bytes of data.__64 bytes from 91.196.222.35: icmp_seq=1 ttl=45 time=83.3 ms____--- 91.196.222.35 ping statistics ---__1 packets transmitted, 1 received, 0% packet loss, time 0ms__rtt min/avg/max/mdev = 83.325/83.325/83.325/0.000 ms
+[ 2020-11-12 02:12:17 ] FALSE
+[ 2020-11-12 02:12:17 ] 83.3
+[ 2020-11-12 02:12:19 ] https://downloads.nordcdn.com/configs/files/ovpn_legacy/servers/nl780.nordvpn.com.tcp443.ovpn
+[ 2020-11-12 02:12:19 ] nl780.nordvpn.com.tcp443.ovpn
+[ 2020-11-12 02:12:20 ] PING 37.120.141.27 (37.120.141.27) 56(84) bytes of data.__64 bytes from 37.120.141.27: icmp_seq=1 ttl=49 time=104 ms____--- 37.120.141.27 ping statistics ---__1 packets transmitted, 1 received, 0% packet loss, time 0ms__rtt min/avg/max/mdev = 103.513/103.513/103.513/0.000 ms
+[ 2020-11-12 02:12:20 ] FALSE
+[ 2020-11-12 02:12:20 ] 104
+[ 2020-11-12 02:12:22 ] https://downloads.nordcdn.com/configs/files/ovpn_legacy/servers/us5520.nordvpn.com.tcp443.ovpn
+[ 2020-11-12 02:12:22 ] us5520.nordvpn.com.tcp443.ovpn
+[ 2020-11-12 02:12:23 ] PING 208.131.139.58 (208.131.139.58) 56(84) bytes of data.__64 bytes from 208.131.139.58: icmp_seq=1 ttl=53 time=67.4 ms____--- 208.131.139.58 ping statistics ---__1 packets transmitted, 1 received, 0% packet loss, time 0ms__rtt min/avg/max/mdev = 67.380/67.380/67.380/0.000 ms
+[ 2020-11-12 02:12:23 ] FALSE
+[ 2020-11-12 02:12:23 ] 67.4
+[ 2020-11-12 02:13:39 ] https://downloads.nordcdn.com/configs/files/ovpn_legacy/servers/it177.nordvpn.com.tcp443.ovpn
+[ 2020-11-12 02:13:39 ] it177.nordvpn.com.tcp443.ovpn
+[ 2020-11-12 02:13:40 ] PING 82.102.21.227 (82.102.21.227) 56(84) bytes of data.__64 bytes from 82.102.21.227: icmp_seq=1 ttl=51 time=135 ms____--- 82.102.21.227 ping statistics ---__1 packets transmitted, 1 received, 0% packet loss, time 0ms__rtt min/avg/max/mdev = 134.581/134.581/134.581/0.000 ms
+[ 2020-11-12 02:13:40 ] FALSE
+[ 2020-11-12 02:13:40 ] 135
+[ 2020-11-12 02:13:42 ] https://downloads.nordcdn.com/configs/files/ovpn_legacy/servers/il26.nordvpn.com.tcp443.ovpn
+[ 2020-11-12 02:13:42 ] il26.nordvpn.com.tcp443.ovpn
+[ 2020-11-12 02:13:43 ] PING 31.168.98.72 (31.168.98.72) 56(84) bytes of data.__64 bytes from 31.168.98.72: icmp_seq=1 ttl=51 time=162 ms____--- 31.168.98.72 ping statistics ---__1 packets transmitted, 1 received, 0% packet loss, time 0ms__rtt min/avg/max/mdev = 161.548/161.548/161.548/0.000 ms
+[ 2020-11-12 02:13:43 ] FALSE
+[ 2020-11-12 02:13:43 ] 162
+[ 2020-11-12 02:14:12 ] https://downloads.nordcdn.com/configs/files/ovpn_legacy/servers/ie130.nordvpn.com.tcp443.ovpn
+[ 2020-11-12 02:14:12 ] ie130.nordvpn.com.tcp443.ovpn
+[ 2020-11-12 02:14:15 ] https://downloads.nordcdn.com/configs/files/ovpn_legacy/servers/us6549.nordvpn.com.tcp443.ovpn
+[ 2020-11-12 02:14:15 ] us6549.nordvpn.com.tcp443.ovpn
+[ 2020-11-12 02:16:17 ] 
+ ip : 109.202.111.171 
+ country : NL 
+ tz : Europe/Amsterdam 
+ region : North Holland 
+ city : Amsterdam 
+ zip :  
+ lat : 0 
+ lon : 0 
+ servers_link : https://downloads.nordcdn.com/configs/files/ovpn_legacy/servers/nl814.nordvpn.com.tcp443.ovpn 
+ server : nl814.nordvpn.com.tcp443.ovpn 
+ down : FALSE 
+ latency : 104 
+ stamp : 2020-11-12 02:05:47 
+[ 2020-11-12 02:16:23 ] 
+ ip : 209.58.135.95 
+ country : US 
+ tz : America/Chicago 
+ region :  
+ city :  
+ zip :  
+ lat : 0 
+ lon : 0 
+ servers_link : https://downloads.nordcdn.com/configs/files/ovpn_legacy/servers/us6518.nordvpn.com.tcp443.ovpn 
+ server : us6518.nordvpn.com.tcp443.ovpn 
+ down : FALSE 
+ latency : 82.5 
+ stamp : 2020-11-12 02:16:23 
+[ 2020-11-12 02:16:25 ] 
+ ip : 45.248.78.179 
+ country : AU 
+ tz : Australia/Perth 
+ region : Western Australia 
+ city : Perth 
+ zip :  
+ lat : 0 
+ lon : 0 
+ servers_link : https://downloads.nordcdn.com/configs/files/ovpn_legacy/servers/au634.nordvpn.com.tcp443.ovpn 
+ server : au634.nordvpn.com.tcp443.ovpn 
+ down : FALSE 
+ latency : 265 
+ stamp : 2020-11-12 02:16:25 

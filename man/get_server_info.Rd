@@ -4,7 +4,7 @@
 \alias{get_server_info}
 \title{get_server_info}
 \usage{
-get_server_info(server)
+get_server_info(server, verbose = F, log = F)
 }
 \description{
 get_server_info

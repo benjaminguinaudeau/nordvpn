@@ -1,10 +1,14 @@
+#' write_log
+#' @export
+write_log <- function(msg){write(glue::glue("[ {Sys.time()} ] {msg}"), file= "log.txt", append=TRUE)}
+
 #' is_server_down
 #' @export
 is_server_down <- function(ip){
   ping <- suppressWarnings(base::system(glue::glue("ping {ip}"), wait = T, timeout = 1, intern = T))
-  log(paste0(ping, collapse = "__"))
+  # write_log(paste0(ping, collapse = "__"))
   down <- as.numeric(stringr::str_extract(stringr::str_subset(ping, "received"), "\\d(?=.*?received)")) == 0
-  log(down)
+  # write_log(down)
 
   if(!down){
     latency <- as.numeric(stringr::str_extract(stringr::str_subset(ping, "time\\="), "(?<=time\\=)(\\d|\\.)+")[1])
@@ -12,7 +16,7 @@ is_server_down <- function(ip){
     latency <- 0
   }
 
-  log(latency)
+  # write_log(latency)
 
   dplyr::tibble(down, latency)
 }
@@ -64,7 +68,7 @@ get_ip_info <- function(ip, verbose = T){
 
   if(verbose) message(glue::glue("[ {Sys.time()} ] {ip}\t|"))
 
-  dplyr::tibble(
+  out <- dplyr::tibble(
     ip,
     country = info$fullip$geo$country,
     tz = info$fullip$geo$time_zone,
@@ -74,11 +78,17 @@ get_ip_info <- function(ip, verbose = T){
     lat = info$fullip$geo$latitude,
     lon = info$fullip$geo$longitude
   )
+
+  if(nrow(out) == 0){
+    return(tibble::tibble(ip = NA))
+  } else {
+    return(out)
+  }
 }
 
 #' get_server_info
 #' @export
-get_server_info <- function(server){
+get_server_info <- function(server, verbose = F, log = F){
   config <- readLines(server$servers_link)
 
   ip <- config %>%
@@ -86,32 +96,27 @@ get_server_info <- function(server){
     stringr::str_remove("remote ") %>%
     stringr::str_remove(" 443")
 
-  log(ip)
+  if(log) write_log(glue::glue("Ip:\t{ip}"))
 
   down <- is_server_down(ip)
 
-  log(glue::glue("down {nrow(down)}"))
-  if(nrow(down) == 0){
-    down <- tibble::tibble(down = NA)
-  }
+  if(log) write_log(glue::glue("Down:\t{nrow(down)}"))
 
-  ip_info <- get_ip_info(ip, verbose = T)
+  # if(nrow(down) == 0){
+  #   down <- tibble::tibble(down = NA)
+  # }
 
-  log(glue::glue("ip_info {nrow(ip_info)}"))
-  if(nrow(ip_info) == 0){
-    ip_info <- tibble::tibble(ip = NA)
-  }
+  ip_info <- get_ip_info(ip, verbose = verbose)
+  if(log) write_log(glue::glue("Ip info:\t{!is.na(ip_info$ip)}"))
 
-   log(glue::glue("server {nrow(server)}"))
-  if(nrow(ip_info) == 0){
-    ip_info <- tibble::tibble(ip = NA)
-  }
+  # if(nrow(ip_info) == 0){
+  #   ip_info <- tibble::tibble(ip = NA)
+  # }
+
 
   out <- dplyr::bind_cols(ip_info, server, down) %>%
     dplyr::mutate(config = list(config),
                   stamp = lubridate::now())
-
-
 
   return(out)
 }

@@ -3,13 +3,10 @@ if(Sys.getenv("api_a") == "") stop("API token cannot be retrieved")
 library(dplyr)
 source("R/utils.R")
 
-log <- function(msg){write(glue::glue("[ {Sys.time()} ] {msg}"), file= "log.txt", append=TRUE)}
-
 # update_server_data(n = 50)
 # Sys.sleep(30)
-n <- 5
+n <- 10
 country <- NULL
-
 
 server <- get_server_list(country = country)
 
@@ -19,29 +16,29 @@ if(base::file.exists("data/servers.rds")){
   already <- dplyr::tibble()
 }
 
-# tictoc::tic()
 server_info <- server %>%
   dplyr::sample_n(n) %>%
   split(1:nrow(.)) %>%
   purrr::map_dfr(~{
-    log(.x)
     # get_server_info(.x)
-    out <- try(get_server_info(.x))
+    out <- try(get_server_info(.x, verbose = F))
     if(inherits(out, "try-error")) return(dplyr::tibble())
+
+    out %>%
+      dplyr::select(-config) %>%
+      purrr::imap_chr(~{glue::glue(" {.y} : {.x} ")}) %>%
+      paste(collapse = "\n") %>%
+      paste0("\n", .) %>%
+      write_log()
+
     return(out)
   })
-# tictoc::toc()
 
-log("writing file")
+already <- dplyr::bind_rows(server_info, already) %>%
+  dplyr::group_by(server) %>%
+  dplyr::arrange(desc(stamp)) %>%
+  dplyr::slice(1)
 
-already <- dplyr::bind_rows(server_info, already) #%>%
-  # dplyr::group_by(server) %>%
-  # dplyr::arrange(desc(stamp)) %>%
-  # dplyr::slice(1)
+write_log(glue::glue("\n\n\nAlready has now {nrow(already)} servers\n\n\n"))
 
-log(glue::glue("already {nrow(already)}"))
-
-log(paste(nrow(already), "\n\n\n"))
-
-try(save(already, "data/server.Rdata"))
-try(saveRDS(already, file = "data/servers.rds"))
+saveRDS(already, file = "data/servers.rds")

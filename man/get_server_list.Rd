@@ -4,7 +4,7 @@
 \alias{get_server_list}
 \title{get_server_list}
 \usage{
-get_server_list(n = 0, country = "\\\\w+")
+get_server_list(n = 0, country = NULL)
 }
 \description{
 get_server_list
