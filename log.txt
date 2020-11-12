@@ -330,3 +330,54 @@ ip_info
 
 
 
+[ 2020-11-12 06:55:52 ] https://downloads.nordcdn.com/configs/files/ovpn_legacy/servers/ua27.nordvpn.com.tcp443.ovpn
+[ 2020-11-12 06:55:52 ] ua27.nordvpn.com.tcp443.ovpn
+[ 2020-11-12 06:55:52 ] 176.107.179.178
+[ 2020-11-12 06:55:53 ] PING 176.107.179.178 (176.107.179.178): 56 data bytes__64 bytes from 176.107.179.178: icmp_seq=0 ttl=251 time=112.187 ms____--- 176.107.179.178 ping statistics ---__2 packets transmitted, 1 packets received, 50.0% packet loss__round-trip min/avg/max/stddev = 112.187/112.187/112.187/0.000 ms
+[ 2020-11-12 06:55:53 ] FALSE
+[ 2020-11-12 06:55:53 ] 112.187
+[ 2020-11-12 06:55:53 ] down 1
+[ 2020-11-12 06:55:55 ] ip_info 1
+[ 2020-11-12 06:55:55 ] server 1
+[ 2020-11-12 06:55:56 ] https://downloads.nordcdn.com/configs/files/ovpn_legacy/servers/jp545.nordvpn.com.tcp443.ovpn
+[ 2020-11-12 06:55:56 ] jp545.nordvpn.com.tcp443.ovpn
+[ 2020-11-12 06:55:56 ] 156.146.35.87
+[ 2020-11-12 06:55:57 ] PING 156.146.35.87 (156.146.35.87): 56 data bytes__64 bytes from 156.146.35.87: icmp_seq=0 ttl=251 time=195.192 ms____--- 156.146.35.87 ping statistics ---__2 packets transmitted, 1 packets received, 50.0% packet loss__round-trip min/avg/max/stddev = 195.192/195.192/195.192/0.000 ms
+[ 2020-11-12 06:55:57 ] FALSE
+[ 2020-11-12 06:55:57 ] 195.192
+[ 2020-11-12 06:55:57 ] down 1
+[ 2020-11-12 06:55:59 ] ip_info 1
+[ 2020-11-12 06:55:59 ] server 1
+[ 2020-11-12 06:55:59 ] https://downloads.nordcdn.com/configs/files/ovpn_legacy/servers/tw138.nordvpn.com.tcp443.ovpn
+[ 2020-11-12 06:55:59 ] tw138.nordvpn.com.tcp443.ovpn
+[ 2020-11-12 06:55:59 ] 185.189.161.82
+[ 2020-11-12 06:56:00 ] PING 185.189.161.82 (185.189.161.82): 56 data bytes__64 bytes from 185.189.161.82: icmp_seq=0 ttl=251 time=207.060 ms____--- 185.189.161.82 ping statistics ---__1 packets transmitted, 1 packets received, 0.0% packet loss__round-trip min/avg/max/stddev = 207.060/207.060/207.060/0.000 ms
+[ 2020-11-12 06:56:00 ] FALSE
+[ 2020-11-12 06:56:00 ] 207.06
+[ 2020-11-12 06:56:00 ] down 1
+[ 2020-11-12 06:56:01 ] ip_info 1
+[ 2020-11-12 06:56:01 ] server 1
+[ 2020-11-12 06:56:01 ] https://downloads.nordcdn.com/configs/files/ovpn_legacy/servers/de805.nordvpn.com.tcp443.ovpn
+[ 2020-11-12 06:56:01 ] de805.nordvpn.com.tcp443.ovpn
+[ 2020-11-12 06:56:02 ] 196.240.57.163
+[ 2020-11-12 06:56:03 ] PING 196.240.57.163 (196.240.57.163): 56 data bytes__64 bytes from 196.240.57.163: icmp_seq=0 ttl=251 time=103.051 ms____--- 196.240.57.163 ping statistics ---__1 packets transmitted, 1 packets received, 0.0% packet loss__round-trip min/avg/max/stddev = 103.051/103.051/103.051/0.000 ms
+[ 2020-11-12 06:56:03 ] FALSE
+[ 2020-11-12 06:56:03 ] 103.051
+[ 2020-11-12 06:56:03 ] down 1
+[ 2020-11-12 06:56:03 ] ip_info 1
+[ 2020-11-12 06:56:03 ] server 1
+[ 2020-11-12 06:56:03 ] https://downloads.nordcdn.com/configs/files/ovpn_legacy/servers/be152.nordvpn.com.tcp443.ovpn
+[ 2020-11-12 06:56:03 ] be152.nordvpn.com.tcp443.ovpn
+[ 2020-11-12 06:56:04 ] 82.102.19.131
+[ 2020-11-12 06:56:05 ] PING 82.102.19.131 (82.102.19.131): 56 data bytes__64 bytes from 82.102.19.131: icmp_seq=0 ttl=251 time=88.949 ms____--- 82.102.19.131 ping statistics ---__1 packets transmitted, 1 packets received, 0.0% packet loss__round-trip min/avg/max/stddev = 88.949/88.949/88.949/0.000 ms
+[ 2020-11-12 06:56:05 ] FALSE
+[ 2020-11-12 06:56:05 ] 88.949
+[ 2020-11-12 06:56:05 ] down 1
+[ 2020-11-12 06:56:07 ] ip_info 1
+[ 2020-11-12 06:56:07 ] server 1
+[ 2020-11-12 06:56:07 ] writing file
+[ 2020-11-12 06:56:07 ] already 60
+[ 2020-11-12 06:56:07 ] 60 
+
+
+
