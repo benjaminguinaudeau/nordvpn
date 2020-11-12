@@ -4,4 +4,4 @@
 .Ruserdata
 .Rbuildignore
 /secret/*
-/lab.Rmd
+/lab*
