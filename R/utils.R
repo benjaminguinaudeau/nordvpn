@@ -36,7 +36,8 @@ get_server_list <- function(n = 0, country = NULL){
 #' @export
 get_ip_info <- function(ip, verbose = T){
 
-  token <- sample(read_rds("secret/api_token.rds"), 1)
+  # token <- sample(read_rds("secret/api_token.rds"), 1)
+  token <- sample(c(Sys.getenv("api_a"), Sys.getenv("api_b"), Sys.getenv("api_c"), Sys.getenv("api_d")), 1)
 
   req <- try({
     httr::GET(glue::glue("https://signals.api.auth0.com/v2.0/ip/{ip}"),

@@ -16,6 +16,11 @@ jobs:
       - name: Install packages
         run: Rscript install.R
       - name: Run R script
+        env: # Or as an environment variable
+          api_a: ${{ secrets.api_a }}
+          api_b: ${{ secrets.api_b }}
+          api_c: ${{ secrets.api_c }}
+          api_d: ${{ secrets.api_d }}
         run: Rscript update.R
       - name: Commit results
         run: |

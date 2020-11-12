@@ -12,6 +12,12 @@ knitr::opts_chunk$set(echo = TRUE)
 pacman::p_load(tidyverse, rvest)
 ```
 
+```{r}
+Sys.setenv("api_a" = "e4b6967c-6921-4784-8bba-d78a212fc52a", 
+           "api_b" = "47bb53dc-f0fb-401c-af62-e54fc011a05c", 
+           "api_c" = "c42c9cea-a0ef-47af-9427-bbaf7810a299", 
+           "api_d" = "87fda554-5eb3-4e4e-bb2a-09ed72a55d8d")
+```
 
 # Get servers
 
