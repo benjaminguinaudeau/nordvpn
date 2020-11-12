@@ -36,6 +36,10 @@ update_server_data(n = 10)
 get_servers()
 
 
+
+readr::read_rds("https://github.com/benjaminguinaudeau/nordvpn/blob/master/data/servers.rds?raw=true")
+
+
 ```
 
 ```{r}

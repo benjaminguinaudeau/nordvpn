@@ -9,7 +9,7 @@ is_server_down <- function(ip){
     latency <- 0
   }
 
-  tibble::tibble(down, latency)
+  dplyr::tibble(down, latency)
 }
 
 #' get_server_list
@@ -26,7 +26,7 @@ get_server_list <- function(n = 0, country = NULL){
 
   if(n == 0) n <- length(servers_link)
 
-  tibble::tibble(servers_link, server = stringr::str_extract(servers_link, glue::glue("(?<=/){country}\\d+.*?$"))) %>%
+  dplyr::tibble(servers_link, server = stringr::str_extract(servers_link, glue::glue("(?<=/){country}\\d+.*?$"))) %>%
     dplyr::sample_n(n, replace = T) %>%
     dplyr::distinct() %>%
     dplyr::arrange(server)
@@ -52,14 +52,14 @@ get_ip_info <- function(ip, verbose = T){
 
   if(inherits(req, "try-error")){
     if(verbose) message(glue::glue("[ {Sys.time()} ] {ip}\t-"))
-    return(tibble::tibble())
+    return(dplyr::tibble())
   }
 
   info <- jsonlite::fromJSON(rawToChar(req$content))
 
   if(verbose) message(glue::glue("[ {Sys.time()} ] {ip}\t|"))
 
-  tibble::tibble(
+  dplyr::tibble(
     ip,
     country = info$fullip$geo$country,
     tz = info$fullip$geo$time_zone,
@@ -74,7 +74,7 @@ get_ip_info <- function(ip, verbose = T){
 #' get_server_info
 #' @export
 get_server_info <- function(server){
-  config <- readr::read_lines(server$servers_link)
+  config <- readLines(server$servers_link)
 
   ip <- config %>%
     stringr::str_subset("remote ") %>%
@@ -95,38 +95,39 @@ update_server_data <- function(n = 10, country = NULL){
   server <- get_server_list(country = country)
 
   if(base::file.exists("data/servers.rds")){
-    already <- readr::read_rds("data/servers.rds")
+    already <- readRDS("data/servers.rds")
   } else {
-    already <- tibble::tibble()
+    already <- dplyr::tibble()
   }
 
-  tictoc::tic()
+  # tictoc::tic()
   server_info <- server %>%
     dplyr::sample_n(n) %>%
     split(1:nrow(.)) %>%
     purrr::map_dfr(~{
       out <- try(get_server_info(.x))
-      if(inherits(out, "try-error")) return(tibble::tibble())
+      if(inherits(out, "try-error")) return(dplyr::tibble())
       return(out)
     })%>%
     dplyr::glimpse()
-  tictoc::toc()
+  # tictoc::toc()
 
   already <- dplyr::bind_rows(server_info, already) %>%
     dplyr::group_by(server) %>%
     dplyr::arrange(desc(stamp)) %>%
     dplyr::slice(1)
 
-  readr::write_rds(already, "data/servers.rds")
+
+  saveRDS(already, "data/servers.rds")
 }
 
 #' get_servers
 #' @export
 get_servers <- function(n = 0){
   if(n == 0){
-    readr::read_rds("data/servers.rds")
+    readRDS("data/servers.rds")
   } else {
-    readr::read_rds("data/servers.rds") %>%
+    readRDS("data/servers.rds") %>%
       dplyr::sample_n(10, replace = T) %>%
       dplyr::distinct()
   }

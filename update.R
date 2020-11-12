@@ -1,6 +1,4 @@
-message("Starting a new run")
-print(1)
 library(dplyr)
 source("R/utils.R")
-update_server_data(n = 10)
-Sys.sleep(30)
+update_server_data(n = 50)
+# Sys.sleep(30)
