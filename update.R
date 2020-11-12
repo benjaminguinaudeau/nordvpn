@@ -42,4 +42,4 @@ already <- dplyr::bind_rows(server_info, already) #%>%
 log(paste(nrow(already), "\n\n\n"))
 
 
-saveRDS(already, "data/servers.rds")
+try(saveRDS(already, "data/servers.rds"))
