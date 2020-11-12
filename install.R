@@ -1,1 +1,1 @@
-install.packages(c("dplyr", "rvest", "tibble", "jsonlite", "readr", "stringr", "purrr", "httr"))
+install.packages(c("dplyr", "rvest", "tibble", "jsonlite", "readr", "stringr", "purrr", "httr", "tictoc"))
