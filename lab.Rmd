@@ -1,0 +1,40 @@
+---
+title: "Untitled"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+```{r}
+pacman::p_load(tidyverse, rvest)
+```
+
+
+# Get servers
+
+```{r}
+
+get_config_file(country = NULL, city = NULL, region = NULL, ip = NULL, credential_path <- "/etc/openvpn/auth.txt"){
+  
+  return(config_file)
+}
+
+if(!is.null(credential_path)){
+  config <- c(config, glue::glue("auth-user-pass {credential_path}"))
+}
+
+update_server_data(n = 10)
+get_servers()
+
+
+```
+
+```{r}
+workflow <- ghactions::workflow(name = "update")
+ghactions::use_ghactions(workflow)
+
+```
+
