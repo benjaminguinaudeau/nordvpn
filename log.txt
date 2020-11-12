@@ -1,1 +1,21 @@
 66.115.157.33
+https://downloads.nordcdn.com/configs/files/ovpn_legacy/servers/au638.nordvpn.com.tcp443.ovpn
+au638.nordvpn.com.tcp443.ovpn
+116.90.72.43
+PING 116.90.72.43 (116.90.72.43): 56 data bytes__64 bytes from 116.90.72.43: icmp_seq=0 ttl=251 time=208.817 ms____--- 116.90.72.43 ping statistics ---__2 packets transmitted, 1 packets received, 50.0% packet loss__round-trip min/avg/max/stddev = 208.817/208.817/208.817/0.000 ms
+https://downloads.nordcdn.com/configs/files/ovpn_legacy/servers/us5594.nordvpn.com.tcp443.ovpn
+us5594.nordvpn.com.tcp443.ovpn
+185.245.87.8
+PING 185.245.87.8 (185.245.87.8): 56 data bytes__64 bytes from 185.245.87.8: icmp_seq=0 ttl=251 time=56.432 ms__64 bytes from 185.245.87.8: icmp_seq=1 ttl=251 time=55.732 ms____--- 185.245.87.8 ping statistics ---__2 packets transmitted, 2 packets received, 0.0% packet loss__round-trip min/avg/max/stddev = 55.732/56.082/56.432/0.350 ms
+https://downloads.nordcdn.com/configs/files/ovpn_legacy/servers/us6909.nordvpn.com.tcp443.ovpn
+us6909.nordvpn.com.tcp443.ovpn
+64.44.80.227
+PING 64.44.80.227 (64.44.80.227): 56 data bytes__64 bytes from 64.44.80.227: icmp_seq=0 ttl=251 time=47.123 ms____--- 64.44.80.227 ping statistics ---__2 packets transmitted, 1 packets received, 50.0% packet loss__round-trip min/avg/max/stddev = 47.123/47.123/47.123/0.000 ms
+https://downloads.nordcdn.com/configs/files/ovpn_legacy/servers/jp517.nordvpn.com.tcp443.ovpn
+jp517.nordvpn.com.tcp443.ovpn
+5.181.235.83
+PING 5.181.235.83 (5.181.235.83): 56 data bytes__64 bytes from 5.181.235.83: icmp_seq=0 ttl=251 time=160.622 ms____--- 5.181.235.83 ping statistics ---__2 packets transmitted, 1 packets received, 50.0% packet loss__round-trip min/avg/max/stddev = 160.622/160.622/160.622/0.000 ms
+https://downloads.nordcdn.com/configs/files/ovpn_legacy/servers/us8059.nordvpn.com.tcp443.ovpn
+us8059.nordvpn.com.tcp443.ovpn
+193.37.252.43
+PING 193.37.252.43 (193.37.252.43): 56 data bytes__64 bytes from 193.37.252.43: icmp_seq=0 ttl=251 time=26.155 ms____--- 193.37.252.43 ping statistics ---__1 packets transmitted, 1 packets received, 0.0% packet loss__round-trip min/avg/max/stddev = 26.155/26.155/26.155/0.000 ms
