@@ -38549,3 +38549,666 @@ Already has now 2215 servers
 Already has now 2247 servers
 
 
+[ 2020-11-12 11:46:32 ] 
+ ip : 104.140.53.178 
+ country : US 
+ tz : America/New_York 
+ region : New York 
+ city : New York 
+ zip :  
+ lat : 0 
+ lon : 0 
+ servers_link : https://downloads.nordcdn.com/configs/files/ovpn_legacy/servers/us6973.nordvpn.com.tcp443.ovpn 
+ server : us6973.nordvpn.com.tcp443.ovpn 
+ down : FALSE 
+ latency : 7.505 
+ stamp : 2020-11-12 11:46:32 
+[ 2020-11-12 11:46:34 ] 
+ ip : 64.94.215.171 
+ country : US 
+ tz : America/New_York 
+ region : New York 
+ city : New York 
+ zip :  
+ lat : 0 
+ lon : 0 
+ servers_link : https://downloads.nordcdn.com/configs/files/ovpn_legacy/servers/us6372.nordvpn.com.tcp443.ovpn 
+ server : us6372.nordvpn.com.tcp443.ovpn 
+ down : FALSE 
+ latency : 7.805 
+ stamp : 2020-11-12 11:46:34 
+[ 2020-11-12 11:46:35 ] 
+ ip : 104.206.12.244 
+ country : CA 
+ tz : America/Toronto 
+ region : Ontario 
+ city : Toronto 
+ zip :  
+ lat : 0 
+ lon : 0 
+ servers_link : https://downloads.nordcdn.com/configs/files/ovpn_legacy/servers/ca1175.nordvpn.com.tcp443.ovpn 
+ server : ca1175.nordvpn.com.tcp443.ovpn 
+ down : FALSE 
+ latency : 15.286 
+ stamp : 2020-11-12 11:46:35 
+[ 2020-11-12 11:46:38 ] 
+ ip : 74.119.146.239 
+ country : US 
+ tz : America/Chicago 
+ region : Illinois 
+ city : Chicago 
+ zip :  
+ lat : 0 
+ lon : 0 
+ servers_link : https://downloads.nordcdn.com/configs/files/ovpn_legacy/servers/us6570.nordvpn.com.tcp443.ovpn 
+ server : us6570.nordvpn.com.tcp443.ovpn 
+ down : FALSE 
+ latency : 23.902 
+ stamp : 2020-11-12 11:46:38 
+[ 2020-11-12 11:46:40 ] 
+ ip : 91.132.137.68 
+ country : US 
+ tz : America/New_York 
+ region : New York 
+ city : New York 
+ zip :  
+ lat : 0 
+ lon : 0 
+ servers_link : https://downloads.nordcdn.com/configs/files/ovpn_legacy/servers/us-ca17.nordvpn.com.tcp443.ovpn 
+ server : NA 
+ down : FALSE 
+ latency : 7.661 
+ stamp : 2020-11-12 11:46:40 
+[ 2020-11-12 11:46:43 ] 
+ ip : 37.120.209.211 
+ country : SE 
+ tz : Europe/Stockholm 
+ region : Stockholm County 
+ city : Stockholm 
+ zip :  
+ lat : 0 
+ lon : 0 
+ servers_link : https://downloads.nordcdn.com/configs/files/ovpn_legacy/servers/se399.nordvpn.com.tcp443.ovpn 
+ server : se399.nordvpn.com.tcp443.ovpn 
+ down : FALSE 
+ latency : 110.692 
+ stamp : 2020-11-12 11:46:43 
+[ 2020-11-12 11:46:46 ] 
+ ip : 62.182.99.62 
+ country : US 
+ tz : America/New_York 
+ region : New York 
+ city : New York 
+ zip :  
+ lat : 0 
+ lon : 0 
+ servers_link : https://downloads.nordcdn.com/configs/files/ovpn_legacy/servers/us5833.nordvpn.com.tcp443.ovpn 
+ server : us5833.nordvpn.com.tcp443.ovpn 
+ down : FALSE 
+ latency : 7.809 
+ stamp : 2020-11-12 11:46:46 
+[ 2020-11-12 11:46:49 ] 
+ ip : 193.36.116.140 
+ country : DK 
+ tz : Europe/Copenhagen 
+ region : Capital Region 
+ city : Copenhagen 
+ zip :  
+ lat : 0 
+ lon : 0 
+ servers_link : https://downloads.nordcdn.com/configs/files/ovpn_legacy/servers/dk184.nordvpn.com.tcp443.ovpn 
+ server : dk184.nordvpn.com.tcp443.ovpn 
+ down : FALSE 
+ latency : 94.484 
+ stamp : 2020-11-12 11:46:49 
+[ 2020-11-12 11:46:53 ] 
+ ip : 89.40.183.15 
+ country : FR 
+ tz : Europe/Paris 
+ region : Paris 
+ city : Paris 
+ zip :  
+ lat : 0 
+ lon : 0 
+ servers_link : https://downloads.nordcdn.com/configs/files/ovpn_legacy/servers/fr549.nordvpn.com.tcp443.ovpn 
+ server : fr549.nordvpn.com.tcp443.ovpn 
+ down : FALSE 
+ latency : 79.665 
+ stamp : 2020-11-12 11:46:53 
+[ 2020-11-12 11:46:54 ] 
+ ip : 217.138.199.27 
+ country : CZ 
+ tz : Europe/Prague 
+ region : Hlavni mesto Praha 
+ city : Prague 
+ zip :  
+ lat : 0 
+ lon : 0 
+ servers_link : https://downloads.nordcdn.com/configs/files/ovpn_legacy/servers/cz93.nordvpn.com.tcp443.ovpn 
+ server : cz93.nordvpn.com.tcp443.ovpn 
+ down : FALSE 
+ latency : 105.303 
+ stamp : 2020-11-12 11:46:54 
+[ 2020-11-12 11:46:57 ] 
+ ip : 45.83.91.27 
+ country : SE 
+ tz : Europe/Stockholm 
+ region : Stockholm County 
+ city : Stockholm 
+ zip :  
+ lat : 0 
+ lon : 0 
+ servers_link : https://downloads.nordcdn.com/configs/files/ovpn_legacy/servers/se520.nordvpn.com.tcp443.ovpn 
+ server : se520.nordvpn.com.tcp443.ovpn 
+ down : FALSE 
+ latency : 101.763 
+ stamp : 2020-11-12 11:46:57 
+[ 2020-11-12 11:46:58 ] 
+ ip : 172.93.147.130 
+ country : US 
+ tz : America/New_York 
+ region : New York 
+ city : Buffalo 
+ zip :  
+ lat : 0 
+ lon : 0 
+ servers_link : https://downloads.nordcdn.com/configs/files/ovpn_legacy/servers/us2930.nordvpn.com.tcp443.ovpn 
+ server : us2930.nordvpn.com.tcp443.ovpn 
+ down : FALSE 
+ latency : 15.981 
+ stamp : 2020-11-12 11:46:58 
+[ 2020-11-12 11:47:01 ] 
+ ip : 104.140.13.227 
+ country : US 
+ tz : America/Chicago 
+ region :  
+ city :  
+ zip :  
+ lat : 0 
+ lon : 0 
+ servers_link : https://downloads.nordcdn.com/configs/files/ovpn_legacy/servers/us5284.nordvpn.com.tcp443.ovpn 
+ server : us5284.nordvpn.com.tcp443.ovpn 
+ down : FALSE 
+ latency : 66.111 
+ stamp : 2020-11-12 11:47:01 
+[ 2020-11-12 11:47:03 ] 
+ ip : 184.75.208.107 
+ country : CA 
+ tz : America/Toronto 
+ region : Ontario 
+ city : Toronto 
+ zip :  
+ lat : 0 
+ lon : 0 
+ servers_link : https://downloads.nordcdn.com/configs/files/ovpn_legacy/servers/ca1195.nordvpn.com.tcp443.ovpn 
+ server : ca1195.nordvpn.com.tcp443.ovpn 
+ down : FALSE 
+ latency : 16.031 
+ stamp : 2020-11-12 11:47:02 
+[ 2020-11-12 11:47:06 ] 
+ ip : 196.240.54.19 
+ country : LV 
+ tz : Europe/Riga 
+ region : Riga 
+ city : Riga 
+ zip :  
+ lat : 0 
+ lon : 0 
+ servers_link : https://downloads.nordcdn.com/configs/files/ovpn_legacy/servers/lv46.nordvpn.com.tcp443.ovpn 
+ server : lv46.nordvpn.com.tcp443.ovpn 
+ down : FALSE 
+ latency : 112.348 
+ stamp : 2020-11-12 11:47:06 
+[ 2020-11-12 11:47:08 ] 
+ ip : 107.173.59.139 
+ country : US 
+ tz : America/New_York 
+ region : New York 
+ city : Buffalo 
+ zip :  
+ lat : 0 
+ lon : 0 
+ servers_link : https://downloads.nordcdn.com/configs/files/ovpn_legacy/servers/us5038.nordvpn.com.tcp443.ovpn 
+ server : us5038.nordvpn.com.tcp443.ovpn 
+ down : FALSE 
+ latency : 16.332 
+ stamp : 2020-11-12 11:47:08 
+[ 2020-11-12 11:47:09 ] 
+ ip : 192.158.226.160 
+ country : US 
+ tz : America/New_York 
+ region : North Carolina 
+ city : Charlotte 
+ zip :  
+ lat : 0 
+ lon : 0 
+ servers_link : https://downloads.nordcdn.com/configs/files/ovpn_legacy/servers/us5644.nordvpn.com.tcp443.ovpn 
+ server : us5644.nordvpn.com.tcp443.ovpn 
+ down : FALSE 
+ latency : 13.519 
+ stamp : 2020-11-12 11:47:09 
+[ 2020-11-12 11:47:11 ] 
+ ip : 104.206.13.40 
+ country : CA 
+ tz : America/Toronto 
+ region : Ontario 
+ city : Toronto 
+ zip :  
+ lat : 0 
+ lon : 0 
+ servers_link : https://downloads.nordcdn.com/configs/files/ovpn_legacy/servers/ca1146.nordvpn.com.tcp443.ovpn 
+ server : ca1146.nordvpn.com.tcp443.ovpn 
+ down : FALSE 
+ latency : 15.32 
+ stamp : 2020-11-12 11:47:11 
+[ 2020-11-12 11:47:12 ] 
+ ip : 198.8.81.91 
+ country : US 
+ tz : America/Los_Angeles 
+ region : California 
+ city : San Francisco 
+ zip :  
+ lat : 0 
+ lon : 0 
+ servers_link : https://downloads.nordcdn.com/configs/files/ovpn_legacy/servers/us6786.nordvpn.com.tcp443.ovpn 
+ server : us6786.nordvpn.com.tcp443.ovpn 
+ down : FALSE 
+ latency : 76.067 
+ stamp : 2020-11-12 11:47:12 
+[ 2020-11-12 11:47:14 ] 
+ ip : 66.115.176.200 
+ country : US 
+ tz : America/Los_Angeles 
+ region : California 
+ city : San Jose 
+ zip :  
+ lat : 0 
+ lon : 0 
+ servers_link : https://downloads.nordcdn.com/configs/files/ovpn_legacy/servers/us5322.nordvpn.com.tcp443.ovpn 
+ server : us5322.nordvpn.com.tcp443.ovpn 
+ down : FALSE 
+ latency : 76.223 
+ stamp : 2020-11-12 11:47:14 
+[ 2020-11-12 11:47:15 ] 
+ ip : 64.44.80.139 
+ country : US 
+ tz : America/Denver 
+ region : Colorado 
+ city : Greenwood Village 
+ zip :  
+ lat : 0 
+ lon : 0 
+ servers_link : https://downloads.nordcdn.com/configs/files/ovpn_legacy/servers/us6748.nordvpn.com.tcp443.ovpn 
+ server : us6748.nordvpn.com.tcp443.ovpn 
+ down : FALSE 
+ latency : 46.735 
+ stamp : 2020-11-12 11:47:15 
+[ 2020-11-12 11:47:18 ] 
+ ip : 217.138.208.219 
+ country : US 
+ tz : America/New_York 
+ region : New York 
+ city : New York 
+ zip :  
+ lat : 0 
+ lon : 0 
+ servers_link : https://downloads.nordcdn.com/configs/files/ovpn_legacy/servers/us5058.nordvpn.com.tcp443.ovpn 
+ server : us5058.nordvpn.com.tcp443.ovpn 
+ down : FALSE 
+ latency : 5.719 
+ stamp : 2020-11-12 11:47:18 
+[ 2020-11-12 11:47:20 ] 
+ ip : 209.58.188.37 
+ country : HK 
+ tz : Asia/Hong_Kong 
+ region : Central and Western District 
+ city : Central 
+ zip :  
+ lat : 0 
+ lon : 0 
+ servers_link : https://downloads.nordcdn.com/configs/files/ovpn_legacy/servers/hk197.nordvpn.com.tcp443.ovpn 
+ server : hk197.nordvpn.com.tcp443.ovpn 
+ down : FALSE 
+ latency : 218.276 
+ stamp : 2020-11-12 11:47:20 
+[ 2020-11-12 11:47:23 ] 
+ ip : 5.180.62.33 
+ country : DE 
+ tz : Europe/Berlin 
+ region :  
+ city :  
+ zip :  
+ lat : 0 
+ lon : 0 
+ servers_link : https://downloads.nordcdn.com/configs/files/ovpn_legacy/servers/de950.nordvpn.com.tcp443.ovpn 
+ server : de950.nordvpn.com.tcp443.ovpn 
+ down : FALSE 
+ latency : 95.004 
+ stamp : 2020-11-12 11:47:23 
+[ 2020-11-12 11:47:25 ] 
+ ip : 104.200.138.42 
+ country : CA 
+ tz : America/Toronto 
+ region : Ontario 
+ city : Toronto 
+ zip :  
+ lat : 0 
+ lon : 0 
+ servers_link : https://downloads.nordcdn.com/configs/files/ovpn_legacy/servers/ca1335.nordvpn.com.tcp443.ovpn 
+ server : ca1335.nordvpn.com.tcp443.ovpn 
+ down : FALSE 
+ latency : 15.856 
+ stamp : 2020-11-12 11:47:25 
+[ 2020-11-12 11:47:26 ] 
+ ip : 66.115.157.120 
+ country : US 
+ tz : America/Los_Angeles 
+ region : California 
+ city : San Jose 
+ zip :  
+ lat : 0 
+ lon : 0 
+ servers_link : https://downloads.nordcdn.com/configs/files/ovpn_legacy/servers/us5694.nordvpn.com.tcp443.ovpn 
+ server : us5694.nordvpn.com.tcp443.ovpn 
+ down : FALSE 
+ latency : 76.182 
+ stamp : 2020-11-12 11:47:26 
+[ 2020-11-12 11:47:28 ] 
+ ip : 208.131.139.58 
+ country : US 
+ tz : America/Denver 
+ region : Utah 
+ city : Salt Lake City 
+ zip :  
+ lat : 0 
+ lon : 0 
+ servers_link : https://downloads.nordcdn.com/configs/files/ovpn_legacy/servers/us5520.nordvpn.com.tcp443.ovpn 
+ server : us5520.nordvpn.com.tcp443.ovpn 
+ down : FALSE 
+ latency : 58.519 
+ stamp : 2020-11-12 11:47:28 
+[ 2020-11-12 11:47:29 ] 
+ ip : 198.147.23.137 
+ country : US 
+ tz : America/Chicago 
+ region : Texas 
+ city : Plano 
+ zip :  
+ lat : 0 
+ lon : 0 
+ servers_link : https://downloads.nordcdn.com/configs/files/ovpn_legacy/servers/us5991.nordvpn.com.tcp443.ovpn 
+ server : us5991.nordvpn.com.tcp443.ovpn 
+ down : FALSE 
+ latency : 34.445 
+ stamp : 2020-11-12 11:47:29 
+[ 2020-11-12 11:47:32 ] 
+ ip : 37.120.223.116 
+ country : DE 
+ tz : Europe/Berlin 
+ region : Hesse 
+ city : Frankfurt am Main 
+ zip :  
+ lat : 0 
+ lon : 0 
+ servers_link : https://downloads.nordcdn.com/configs/files/ovpn_legacy/servers/de676.nordvpn.com.tcp443.ovpn 
+ server : de676.nordvpn.com.tcp443.ovpn 
+ down : FALSE 
+ latency : 92.913 
+ stamp : 2020-11-12 11:47:32 
+[ 2020-11-12 11:47:36 ] 
+ ip : 45.133.192.155 
+ country : IS 
+ tz : Atlantic/Reykjavik 
+ region : Southern Peninsula 
+ city : Keflavik 
+ zip :  
+ lat : 0 
+ lon : 0 
+ servers_link : https://downloads.nordcdn.com/configs/files/ovpn_legacy/servers/is59.nordvpn.com.tcp443.ovpn 
+ server : is59.nordvpn.com.tcp443.ovpn 
+ down : FALSE 
+ latency : 125.994 
+ stamp : 2020-11-12 11:47:36 
+[ 2020-11-12 11:47:39 ] 
+ ip : 185.122.168.248 
+ country : NL 
+ tz : Europe/Amsterdam 
+ region : South Holland 
+ city : Rotterdam 
+ zip :  
+ lat : 0 
+ lon : 0 
+ servers_link : https://downloads.nordcdn.com/configs/files/ovpn_legacy/servers/nl401.nordvpn.com.tcp443.ovpn 
+ server : nl401.nordvpn.com.tcp443.ovpn 
+ down : FALSE 
+ latency : 84.962 
+ stamp : 2020-11-12 11:47:39 
+[ 2020-11-12 11:47:41 ] 
+ ip : 64.44.140.163 
+ country : US 
+ tz : America/Chicago 
+ region : Illinois 
+ city : Chicago 
+ zip :  
+ lat : 0 
+ lon : 0 
+ servers_link : https://downloads.nordcdn.com/configs/files/ovpn_legacy/servers/us6838.nordvpn.com.tcp443.ovpn 
+ server : us6838.nordvpn.com.tcp443.ovpn 
+ down : FALSE 
+ latency : 25.479 
+ stamp : 2020-11-12 11:47:41 
+[ 2020-11-12 11:47:44 ] 
+ ip : 64.94.215.115 
+ country : US 
+ tz : America/New_York 
+ region : New York 
+ city : New York 
+ zip :  
+ lat : 0 
+ lon : 0 
+ servers_link : https://downloads.nordcdn.com/configs/files/ovpn_legacy/servers/us6375.nordvpn.com.tcp443.ovpn 
+ server : us6375.nordvpn.com.tcp443.ovpn 
+ down : FALSE 
+ latency : 7.417 
+ stamp : 2020-11-12 11:47:44 
+[ 2020-11-12 11:47:47 ] 
+ ip : 195.181.166.79 
+ country : SE 
+ tz : Europe/Stockholm 
+ region : Stockholm County 
+ city : Stockholm 
+ zip :  
+ lat : 0 
+ lon : 0 
+ servers_link : https://downloads.nordcdn.com/configs/files/ovpn_legacy/servers/se439.nordvpn.com.tcp443.ovpn 
+ server : se439.nordvpn.com.tcp443.ovpn 
+ down : FALSE 
+ latency : 100.833 
+ stamp : 2020-11-12 11:47:47 
+[ 2020-11-12 11:47:50 ] 
+ ip : 185.44.79.132 
+ country : GB 
+ tz : Europe/London 
+ region : England 
+ city : London 
+ zip :  
+ lat : 0 
+ lon : 0 
+ servers_link : https://downloads.nordcdn.com/configs/files/ovpn_legacy/servers/uk887.nordvpn.com.tcp443.ovpn 
+ server : uk887.nordvpn.com.tcp443.ovpn 
+ down : FALSE 
+ latency : 75.825 
+ stamp : 2020-11-12 11:47:49 
+[ 2020-11-12 11:47:51 ] 
+ ip : 103.107.198.163 
+ country : SG 
+ tz : Asia/Singapore 
+ region :  
+ city : Singapore 
+ zip :  
+ lat : 0 
+ lon : 0 
+ servers_link : https://downloads.nordcdn.com/configs/files/ovpn_legacy/servers/sg456.nordvpn.com.tcp443.ovpn 
+ server : sg456.nordvpn.com.tcp443.ovpn 
+ down : FALSE 
+ latency : 313.178 
+ stamp : 2020-11-12 11:47:51 
+[ 2020-11-12 11:47:54 ] 
+ ip : 176.113.73.180 
+ country : CA 
+ tz : America/Toronto 
+ region :  
+ city :  
+ zip :  
+ lat : 0 
+ lon : 0 
+ servers_link : https://downloads.nordcdn.com/configs/files/ovpn_legacy/servers/us6119.nordvpn.com.tcp443.ovpn 
+ server : us6119.nordvpn.com.tcp443.ovpn 
+ down : FALSE 
+ latency : 55.272 
+ stamp : 2020-11-12 11:47:54 
+[ 2020-11-12 11:47:57 ] 
+ ip : 45.12.223.83 
+ country : NO 
+ tz : Europe/Oslo 
+ region : Oslo County 
+ city : Oslo 
+ zip :  
+ lat : 0 
+ lon : 0 
+ servers_link : https://downloads.nordcdn.com/configs/files/ovpn_legacy/servers/no188.nordvpn.com.tcp443.ovpn 
+ server : no188.nordvpn.com.tcp443.ovpn 
+ down : FALSE 
+ latency : 116.047 
+ stamp : 2020-11-12 11:47:57 
+[ 2020-11-12 11:47:59 ] 
+ ip : 31.13.191.156 
+ country : SE 
+ tz : Europe/Stockholm 
+ region : Stockholm County 
+ city : Stockholm 
+ zip :  
+ lat : 0 
+ lon : 0 
+ servers_link : https://downloads.nordcdn.com/configs/files/ovpn_legacy/servers/se428.nordvpn.com.tcp443.ovpn 
+ server : se428.nordvpn.com.tcp443.ovpn 
+ down : FALSE 
+ latency : 103.583 
+ stamp : 2020-11-12 11:47:59 
+[ 2020-11-12 11:48:02 ] 
+ ip : 37.120.154.203 
+ country : JP 
+ tz : Asia/Tokyo 
+ region : Tokyo 
+ city : Tokyo 
+ zip :  
+ lat : 0 
+ lon : 0 
+ servers_link : https://downloads.nordcdn.com/configs/files/ovpn_legacy/servers/jp540.nordvpn.com.tcp443.ovpn 
+ server : jp540.nordvpn.com.tcp443.ovpn 
+ down : FALSE 
+ latency : 177.022 
+ stamp : 2020-11-12 11:48:02 
+[ 2020-11-12 11:48:04 ] 
+ ip : 162.210.195.150 
+ country : US 
+ tz : America/New_York 
+ region : District of Columbia 
+ city : Washington 
+ zip :  
+ lat : 0 
+ lon : 0 
+ servers_link : https://downloads.nordcdn.com/configs/files/ovpn_legacy/servers/us5815.nordvpn.com.tcp443.ovpn 
+ server : us5815.nordvpn.com.tcp443.ovpn 
+ down : FALSE 
+ latency : 2.508 
+ stamp : 2020-11-12 11:48:04 
+[ 2020-11-12 11:48:05 ] 
+ ip : 196.247.57.35 
+ country : CA 
+ tz : America/Toronto 
+ region : Ontario 
+ city : Toronto 
+ zip :  
+ lat : 0 
+ lon : 0 
+ servers_link : https://downloads.nordcdn.com/configs/files/ovpn_legacy/servers/ca1337.nordvpn.com.tcp443.ovpn 
+ server : ca1337.nordvpn.com.tcp443.ovpn 
+ down : FALSE 
+ latency : 15.962 
+ stamp : 2020-11-12 11:48:05 
+[ 2020-11-12 11:48:08 ] 
+ ip : 37.120.133.72 
+ country : GB 
+ tz : Europe/London 
+ region : England 
+ city : London 
+ zip :  
+ lat : 0 
+ lon : 0 
+ servers_link : https://downloads.nordcdn.com/configs/files/ovpn_legacy/servers/uk1894.nordvpn.com.tcp443.ovpn 
+ server : uk1894.nordvpn.com.tcp443.ovpn 
+ down : FALSE 
+ latency : 76.607 
+ stamp : 2020-11-12 11:48:08 
+[ 2020-11-12 11:48:11 ] 
+ ip : 89.187.175.114 
+ country : US 
+ tz : America/Chicago 
+ region : Texas 
+ city : Dallas 
+ zip :  
+ lat : 0 
+ lon : 0 
+ servers_link : https://downloads.nordcdn.com/configs/files/ovpn_legacy/servers/us6578.nordvpn.com.tcp443.ovpn 
+ server : us6578.nordvpn.com.tcp443.ovpn 
+ down : FALSE 
+ latency : 30.635 
+ stamp : 2020-11-12 11:48:11 
+[ 2020-11-12 11:48:14 ] 
+ ip : 152.89.162.251 
+ country : CH 
+ tz : Europe/Zurich 
+ region : Zurich 
+ city : Zurich 
+ zip :  
+ lat : 0 
+ lon : 0 
+ servers_link : https://downloads.nordcdn.com/configs/files/ovpn_legacy/servers/ch259.nordvpn.com.tcp443.ovpn 
+ server : ch259.nordvpn.com.tcp443.ovpn 
+ down : FALSE 
+ latency : 101.359 
+ stamp : 2020-11-12 11:48:14 
+[ 2020-11-12 11:48:17 ] 
+ ip : 185.176.221.186 
+ country : GB 
+ tz : Europe/London 
+ region : Islington 
+ city : Islington 
+ zip :  
+ lat : 0 
+ lon : 0 
+ servers_link : https://downloads.nordcdn.com/configs/files/ovpn_legacy/servers/lv55.nordvpn.com.tcp443.ovpn 
+ server : lv55.nordvpn.com.tcp443.ovpn 
+ down : FALSE 
+ latency : 106.112 
+ stamp : 2020-11-12 11:48:17 
+[ 2020-11-12 11:48:18 ] 
+ ip : 167.88.10.75 
+ country : US 
+ tz : America/Chicago 
+ region : Illinois 
+ city : Chicago 
+ zip :  
+ lat : 0 
+ lon : 0 
+ servers_link : https://downloads.nordcdn.com/configs/files/ovpn_legacy/servers/us6422.nordvpn.com.tcp443.ovpn 
+ server : us6422.nordvpn.com.tcp443.ovpn 
+ down : FALSE 
+ latency : 24.927 
+ stamp : 2020-11-12 11:48:18 
+[ 2020-11-12 11:48:18 ] 
+
+Already has now 2268 servers
+
+
