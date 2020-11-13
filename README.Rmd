@@ -38,6 +38,7 @@ If you want to get the complete liste of servers available:
 ```{r}
 nordvpn::get_servers() %>%
   dplyr::glimpse()
+
 ```
 
 For specific country: 
