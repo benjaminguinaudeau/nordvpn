@@ -5,7 +5,7 @@ source("R/utils.R")
 
 # update_server_data(n = 50)
 # Sys.sleep(30)
-n <- 150
+n <- 300
 country <- NULL
 
 server <- get_server_list(country = country)
@@ -21,6 +21,7 @@ try({
     dplyr::sample_n(n) %>%
     split(1:nrow(.)) %>%
     purrr::map_dfr(~{
+      print(.x)
       # get_server_info(.x)
       out <- try(get_server_info(.x, verbose = F))
       if(inherits(out, "try-error")) return(dplyr::tibble())
